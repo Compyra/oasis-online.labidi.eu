@@ -1,0 +1,13 @@
+{
+    "name": "Oasis Online — Official helplines",
+    "short_name": "Helplines",
+    "description": "Official, verified helplines and emergency numbers. Find help now.",
+    "start_url": "./",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#0d1613",
+    "theme_color": "#0e3b36",
+    "icons": [
+        { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+    ]
+}

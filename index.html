@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+    <title>Oasis Online — Official helplines. Find help now.</title>
+    <meta name="description" content="Official emergency numbers and helplines worldwide — suicide prevention, violence and abuse, children and youth, addiction. Verified numbers only, for Belgium, Europe, the Americas, Africa, Asia and Oceania. Free, anonymous, works on any device.">
+    <link rel="canonical" href="https://oasis-online.labidi.eu/">
+    <link rel="alternate" hreflang="en" href="https://oasis-online.labidi.eu/?lang=en">
+    <link rel="alternate" hreflang="nl" href="https://oasis-online.labidi.eu/?lang=nl">
+    <link rel="alternate" hreflang="fr" href="https://oasis-online.labidi.eu/?lang=fr">
+    <link rel="alternate" hreflang="de" href="https://oasis-online.labidi.eu/?lang=de">
+    <link rel="alternate" hreflang="x-default" href="https://oasis-online.labidi.eu/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Oasis Online — Official helplines">
+    <meta property="og:description" content="Verified, official helplines and emergency numbers. Find help now — free, anonymous, on any device.">
+    <meta property="og:url" content="https://oasis-online.labidi.eu/">
+    <meta name="theme-color" content="#0e3b36">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.svg">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="style.css?v=4">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Oasis Online — Official helplines",
+        "url": "https://oasis-online.labidi.eu/",
+        "description": "Directory of official, verified helplines and emergency numbers: suicide prevention, violence and abuse, children and youth, addiction and more.",
+        "inLanguage": ["en", "nl", "fr", "de"]
+    }
+    </script>
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <img src="icon.svg" alt="" width="28" height="28">
+            <span>Oasis <b>Online</b></span>
+        </div>
+        <nav class="langs" aria-label="Language">
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+            <button type="button" data-lang="nl" aria-pressed="false">NL</button>
+            <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+            <button type="button" data-lang="de" aria-pressed="false">DE</button>
+        </nav>
+        <button type="button" id="quickExit" class="quick-exit" data-i18n="exit">Quick exit ✕</button>
+    </header>
+
+    <a class="sos" href="tel:112">
+        <span class="sos-icon" aria-hidden="true">🚨</span>
+        <span class="sos-text"><b data-i18n="sosTitle">In immediate danger?</b>
+        <span data-i18n="sosAction">Call 112 now — free, 24/7</span></span>
+        <span class="sos-num" aria-hidden="true">112</span>
+    </a>
+
+    <main>
+        <section class="intro">
+            <h1 data-i18n="title">Find help now</h1>
+            <p data-i18n="tagline">Official helplines only — every number verified against its official source. Free to use, anonymous, no tracking.</p>
+        </section>
+
+        <section class="controls" aria-label="Filters">
+            <div id="places" class="places" role="tablist" aria-label="Region"></div>
+            <p id="placeNote" class="place-note" hidden></p>
+            <div class="searchbox">
+                <label class="visually-hidden" for="search" data-i18n="searchLabel">Search helplines</label>
+                <input type="search" id="search" autocomplete="off" spellcheck="false"
+                       data-i18n-placeholder="searchHint" placeholder="Search: suicide, violence, drugs, children…">
+            </div>
+            <div id="cats" class="cats" aria-label="Category"></div>
+        </section>
+
+        <p id="count" class="count" role="status"></p>
+        <section id="results" class="results" aria-live="polite"></section>
+
+        <noscript>
+            <div class="noscript">
+                <p><b>This page works best with JavaScript, but the most important numbers are right here:</b></p>
+                <ul>
+                    <li><b>112</b> — Emergency: ambulance &amp; fire (Europe-wide, free, 24/7)</li>
+                    <li><b>101</b> — Police (Belgium)</li>
+                    <li><b>1813</b> — Zelfmoordlijn, suicide prevention (Belgium, NL, free, 24/7)</li>
+                    <li><b>0800 32 123</b> — Centre de Prévention du Suicide (Belgium, FR, free, 24/7)</li>
+                    <li><b>106</b> — Tele-Onthaal (NL) · <b>107</b> — Télé-Accueil (FR) · <b>108</b> — Telefonhilfe (DE) — someone to talk to, free, 24/7</li>
+                    <li><b>102</b> — Awel (NL) · <b>103</b> — Écoute-Enfants (FR) — for children &amp; young people, free</li>
+                    <li><b>116 000</b> — Child Focus, missing children (free, 24/7)</li>
+                    <li><b>1712</b> — violence &amp; abuse (NL, free, Mon–Fri 9–18) · <b>0800 30 030</b> — Écoute Violences Conjugales (FR, free)</li>
+                    <li><b>070 245 245</b> — Poison Centre (free, 24/7)</li>
+                    <li>Elsewhere: <b>112</b> EU · <b>999</b> UK · <b>911</b> US/Canada · <b>000</b> Australia · <b>111</b> New Zealand · suicide &amp; crisis: <b>988</b> (US/CA), <b>116 123</b> (UK/IE and much of the EU), <b>3114</b> (FR), <b>113</b> (NL), <b>13 11 14</b> (AU)</li>
+                </ul>
+            </div>
+        </noscript>
+    </main>
+
+    <footer>
+        <p><span data-i18n="verified">All numbers verified against their official sources on</span> <b id="updated"></b>.</p>
+        <p data-i18n="disclaimer">This site lists official services only and is not itself an emergency service. Spotted an error? Please tell us — a wrong number can cost precious time.</p>
+        <p>
+            <a id="contactLink" href="mailto:oasis-online@labidi.eu">oasis-online@labidi.eu</a>
+            · <a href="https://oasis.labidi.eu/" rel="noopener">O.A.S.I.S. offline survival guide</a>
+            · <a href="https://labidi.eu/" rel="noopener">labidi.eu</a>
+        </p>
+    </footer>
+
+    <script src="data.js?v=4"></script>
+    <script src="app.js?v=4"></script>
+</body>
+</html>
