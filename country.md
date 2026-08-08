@@ -2,7 +2,7 @@
 
 > Generated from data.js (verified 2026-08-08) on 2026-08-08 by tools/build-country-md.py — do not edit by hand.
 > Every number was verified against an official source before shipping; see todo.md for the method.
-**231 countries & territories** — 36 with full verified helpline sets, the rest with cross-checked emergency numbers.
+**234 countries & territories** — 36 with full verified helpline sets, the rest with cross-checked emergency numbers.
 
 ## Global layers
 
@@ -495,7 +495,7 @@
 - 🇻🇳 **Vietnam** `vn` — Police **113** · Ambulance **115** · Fire brigade **114** · Also works **112** · Children in danger **111**
 - 🇾🇪 **Yemen** `ye` — Police **199** · Ambulance **191** · Fire brigade **191** ⚠️ *response may be unreliable/limited (per official travel advice)*
 
-## Oceania (20)
+## Oceania (23)
 - 🇦🇸 **American Samoa** `as` — All emergencies **911**
 
 ### 🇦🇺 Australia `au` — full coverage
@@ -510,10 +510,15 @@
 *Emergency*
 - **Poisons Information — 13 11 26** — **13 11 26** (24/7) — Australia-wide poisons information line — what to do after swallowing or contact with a poison, 24 hours a day.
 - 🇨🇰 **Cook Islands** `ck` — All emergencies **999**
-- 🇫🇯 **Fiji** `fj` — All emergencies **911**
+
+### 🇫🇯 Fiji `fj` — full coverage
+*Emergency*
+- **911 — Emergency** — **911** (24/7, free) — Fiji's national emergency number — free from every provider. Direct lines: police 917, fire 910 (National Fire Authority), Crime Stoppers 919.
+*Suicide & someone to talk to*
+- **Lifeline Fiji — 1543** — **1543** (free) — [site](https://lifelinefiji.com/) — Fiji's crisis and suicide-prevention line — call toll-free 1543 to talk with a trained counsellor. \"Connecting people with care, from crisis to opportunities.\"
 - 🇵🇫 **French Polynesia** `pf` — Police **17** · Ambulance **15** · Fire brigade **18** · Also works **112**
 - 🇬🇺 **Guam** `gu` — All emergencies **911**
-- 🇰🇮 **Kiribati** `ki` — All emergencies **999** · Also works **100**
+- 🇰🇮 **Kiribati** `ki` — All emergencies **999** · Police **992** · Ambulance **994** · Fire brigade **993**
 - 🇲🇭 **Marshall Islands** `mh` — All emergencies **911**
 - 🇫🇲 **Micronesia** `fm` — All emergencies **911**
 - 🇳🇷 **Nauru** `nr` — Police **110** · Ambulance **111** · Fire brigade **112**
@@ -524,11 +529,14 @@
 - **111 — Emergency** — **111** (24/7, free) — Police, fire and ambulance across New Zealand.
 *Suicide & someone to talk to*
 - **1737 — Need to talk?** — **1737** / SMS **1737** (24/7, free) — [site](https://1737.org.nz/) — New Zealand's national mental-health line: call or text 1737 to talk with a trained counsellor — free, confidential, any time.
+- 🇳🇺 **Niue** `nu` — All emergencies **999**
 - 🇲🇵 **Northern Mariana Islands** `mp` — All emergencies **911**
 - 🇵🇼 **Palau** `pw` — All emergencies **911**
 - 🇵🇬 **Papua New Guinea** `pg` — Police **112** · Ambulance **111** · Fire brigade **110**
-- 🇼🇸 **Samoa** `ws` — All emergencies **999**
-- 🇸🇧 **Solomon Islands** `sb` — All emergencies **999** · Also works **911**
-- 🇹🇴 **Tonga** `to` — All emergencies **911**
-- 🇹🇻 **Tuvalu** `tv` — All emergencies **911**
-- 🇻🇺 **Vanuatu** `vu` — Police **111** · Ambulance **112** · Fire brigade **113**
+- 🇼🇸 **Samoa** `ws` — All emergencies **911**
+- 🇸🇧 **Solomon Islands** `sb` — Police **999** · Ambulance **111** · Fire brigade **988**
+- 🇹🇰 **Tokelau** `tk` — All emergencies **999** ⚠️ *response may be unreliable/limited (per official travel advice)*
+- 🇹🇴 **Tonga** `to` — All emergencies **911** · Police **922** · Ambulance **933** · Fire brigade **999**
+- 🇹🇻 **Tuvalu** `tv` — Police **911** · Ambulance **999** · Fire brigade **000**
+- 🇻🇺 **Vanuatu** `vu` — Police **111** · Ambulance **115** · Fire brigade **113**
+- 🇼🇫 **Wallis & Futuna** `wf` — Police **17** · Ambulance **15** · Fire brigade **18** · Also works **112**

@@ -3,14 +3,14 @@
    Bump VERSION together with the ?v= asset query in index.html. */
 "use strict";
 
-const VERSION = 7;
+const VERSION = 8;
 const CACHE = "oasis-online-v" + VERSION;
 const SHELL = [
     "./",
     "index.html",
-    "style.css?v=7",
-    "data.js?v=7",
-    "app.js?v=7",
+    "style.css?v=8",
+    "data.js?v=8",
+    "app.js?v=8",
     "icon.svg",
     "site.webmanifest"
 ];
