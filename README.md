@@ -1,4 +1,4 @@
-# oasis-online.labidi.eu
+# help.labidi.eu — Oasis Online
 
 **Official helplines. Find help now.**
 
@@ -7,7 +7,7 @@ suicide prevention, violence & abuse, children & youth, addiction, practical hel
 with one-tap calling. Built to work for a person in crisis: no menus to fight, no
 tracking, readable on any device, and it keeps working offline once visited.
 
-Live: https://oasis-online.labidi.eu/
+Live: https://help.labidi.eu/
 
 ## Hard rules (the whole point of this site)
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://oasis-online.labidi.eu/sitemap.xml
+Sitemap: https://help.labidi.eu/sitemap.xml
