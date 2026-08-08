@@ -171,6 +171,36 @@ main {
 
 /* ---------- controls ---------- */
 
+.quick { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: .6rem; }
+
+.quick button {
+    min-height: 42px;
+    padding: 0 .85rem;
+    font: inherit;
+    font-size: .92rem;
+    font-weight: 600;
+    background: var(--chip-bg);
+    color: var(--ink);
+    border: 1.5px solid transparent;
+    border-radius: 999px;
+    cursor: pointer;
+}
+.quick button[aria-pressed="true"] { background: var(--chip-on); color: var(--chip-on-ink); }
+
+.quick .locate-btn {
+    background: var(--brand-soft);
+    color: var(--brand);
+    border-color: var(--brand);
+    font-weight: 700;
+}
+.quick .locate-btn:hover { background: var(--brand); color: var(--brand-ink); }
+
+.quick-status { margin: 0 0 .5rem; font-size: .9rem; color: var(--ink-soft); }
+
+.browse { margin: 0 0 .8rem; }
+.browse .browse-label { align-self: center; font-size: .9rem; font-weight: 600; color: var(--ink-soft); }
+.browse button[aria-pressed="true"] { background: var(--brand); color: var(--brand-ink); }
+
 .places { display: flex; gap: .4rem; flex-wrap: wrap; }
 
 .places button {

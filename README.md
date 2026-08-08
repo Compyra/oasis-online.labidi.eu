@@ -65,13 +65,14 @@ Live coverage table and per-country verification status: see [todo.md](todo.md).
 - [x] **Worldwide** (directory layer) — Find a Helpline, Befrienders, Child Helpline International
 - [x] **Europe by country** — NL DE FR UK IE CH AT ES IT SE NO DK FI IS PL CZ full; LU PT partial; 12 more EU countries at core level (112 + note)
 - [x] **Americas** — US, Canada, Mexico, Brazil full; Argentina partial
-- [x] **Africa** — South Africa full; Tunisia, Kenya, Nigeria, Egypt core
+- [x] **Africa** — South Africa & Tunisia full; Kenya, Nigeria, Egypt core
 - [x] **Asia** — India, Singapore full; Japan, South Korea, Philippines core
 - [x] **Oceania** — Australia, New Zealand full
-- [x] **All remaining countries** — 181 countries total; every one has at least its
-  verified emergency numbers (police/ambulance/fire), localised in 4 languages
+- [x] **All remaining countries** — 229 countries & territories; every one has at least its
+  verified emergency numbers (police/ambulance/fire), localised in 4 languages.
+  Full reference: [country.md](country.md)
 - [ ] Upgrade core countries with verified national helplines — queue lives in [todo.md](todo.md)
-- [ ] 14 states pending (couldn't corroborate emergency numbers — listed in [todo.md](todo.md), never guessed)
+- [ ] North Korea — the only state left out (no verifiable public emergency system)
 
 ## Verification log
 

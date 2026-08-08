@@ -1,47 +1,39 @@
 # todo — Oasis Online
 
-**State (2026-08-07, v4):** 183 places · 181 countries · 280+ entries.
-36 countries have verified national helpline sets ("full"); the rest carry
-cross-checked emergency numbers only ("core"). Data lives in
-[data.js](data.js) — handwritten places on top, the `CORE_COUNTRIES`
-generator table at the bottom (`[iso, continent, "EN name", "u:… | p:…;a:…;f:…;x:…;t:…;c:…;r:…"]`).
+**State (2026-08-08, v6):** 231 places · 229 countries & territories · 330+ entries.
+37 countries have verified national helpline sets ("full"); the rest carry
+cross-checked emergency numbers ("core"), incl. 33 territories/dependencies and
+2 countries officially confirmed to have **no** central number (GN, CG).
+UX: 📍 use-my-location (offline nearest-centroid, `GEO_CENTROIDS` in data.js) +
+continent quick-picks + per-category situation keywords (`CAT_KW` in app.js).
+Full per-country reference: [country.md](country.md) — regenerate with
+`python tools/build-country-md.py` after every data.js change.
+Data lives in [data.js](data.js) — handwritten places on top, the `CORE_COUNTRIES`
+generator table at the bottom (`[iso, continent, "EN name", "u:… | p:…;a:…;f:…;x:…;t:…;c:…;r:…", warn?]`).
 
 **One rule:** nothing ships unverified. A number goes in only after its own
 official site (or, for statutory emergency numbers, a corroborated reference)
 confirms it. Omit hours/cost rather than guess. Never change an entry `id`.
 
-## 1 · Remaining countries (17) — not on the site yet
+## 1 · Remaining countries (1)
 
-Emergency numbers could not be corroborated on 2026-08-06 (conflicting or absent
-rows). Verify each against an official government/embassy source, then add a
-`CORE_COUNTRIES` row. **Do not guess.**
+Everything else is on the site. On 2026-08-08 the last 16 were verified against
+FCDO travel-advice pages (gov.uk — official UK government source); Guinea and
+Congo-Brazzaville shipped as "no central emergency number" (that is the official
+fact). Still absent:
 
-| Code | Country | Lead to chase |
+| Code | Country | Why |
 | --- | --- | --- |
-| BF | Burkina Faso | police.gov.bf mentioned 17/1010 — conflicting with 112 rollout |
-| BI | Burundi | 112/117 unclear |
-| CD | DR Congo | 112 claimed regionally, unverified |
-| CF | Central African Republic | 117 police? unverified |
-| CG | Congo (Rep.) | 111/112/117 unclear |
-| DM | Dominica | 999 likely (Commonwealth pattern), verify RDPF site |
-| ER | Eritrea | eritel.com.er FAQ lists numbers — refetch |
-| FM | Micronesia | 911 likely (US pattern), verify |
-| GN | Guinea | 117/122 unclear |
-| GQ | Equatorial Guinea | 112/114 unclear |
-| KM | Comoros | local numbers only? |
-| KP | North Korea | local numbers only; likely stays unlisted |
-| LY | Libya | 1515 unified? unverified |
-| NE | Niger | 17/15/18 colonial pattern, unverified |
-| ST | São Tomé & Príncipe | 112 claimed, unverified |
-| TM | Turkmenistan | landline 02/03/01 vs mobile 00x split — needs official source |
-| YE | Yemen | 194 police / 191 ambulance partial row only |
+| KP | North Korea | "Local numbers only" per all sources; no verifiable public system. Likely stays unlisted. |
 
 (Vatican deliberately excluded — Italian system applies.)
 
 ## 2 · Pending number verifications (specific leads)
 
 - KR **109** suicide line (launched 2024) · JP Inochi no Denwa **0570-783-556** + Yorisoi **0120-279-338** · PH NCMH **1553** · AR CAS **135** · PT SOS Voz Amiga · Childline Kenya **116**.
-- Blocked fetches to retry: sosdetresse.lu (403) · respectseniors.be (down) · mind.se detail page · kidshelpline.com.au (unparsable).
+- Card-opposition numbers to verify & add: FR **0 892 705 705** (refetch service-public.gouv.fr F2428 — old service-public.fr URL redirects) · NL per-bank? · UK 159 anti-fraud line.
+- Blocked fetches to retry: sosdetresse.lu (403) · kjt.lu · 112.public.lu (all three LU sources down 08-08 — LU full upgrade blocked) · respectseniors.be (down) · mind.se detail page · kidshelpline.com.au · 116006.fr (unparsable).
+- TN follow-ups: seniors green line **1833** (seen on femmes.gov.tn, verify scope) · drogues/mental-health lines.
 - Belgium backlog: Respect Seniors 0800 30 330 · CAW 0800 13 500 · Stop it Now · Vertrouwenscentra.
 
 ## 3 · Upgrade queue (core → full, continent by continent)
@@ -62,6 +54,8 @@ own site confirms.
 
 ## Log (compact)
 
+- **08-08** v6: TN upgraded to full (FCDO: 190 SAMU / 197 police / 198 fire / 193 National Guard rural; ministry green line **1809** child protection; SOS Femmes map) · DE **116 116** Sperr-Notruf (card/eID blocking, sperr-notruf.de) · FR Drogues Info Service · richer stolen-card keywords on Card Stop/Doc Stop · 📍 use-my-location button (offline `GEO_CENTROIDS` nearest-centroid, top-3 "near you" chips for border correction, stuck-prompt guard) · continent quick-pick buttons · `CAT_KW` situation-keyword layer (overdose/geslagen/mobbing/harcèlement… ×4 langs). QA: 0 audit errors, 231 places walked, 0 console errors, 0 overflow @320px.
+- **08-08** v5: last 16 countries verified via FCDO travel advice (BF BI CD CF DM ER FM GQ KM LY NE ST TM YE added; GN & CG shipped as "no central number"); +33 territories (PR GL FO AW CW BM KY …); ⚠️ reliability-warning notes; SOS banner handles no-number countries; country.md + tools/build-country-md.py.
 - **08-07** v4: travel numbers (TH 1155, EG 126, KR 1330, JP #7119, CN 122, VN 111, KH 1280) · locale auto-detect + `?place=` links · type-a-country-in-search chips · Intl label caching · lean todo.
 - **08-06** v3: all corroborable countries added (181) via generator; 15 corrections from cross-check; 17 uncorroborable listed above.
 - **08-06** v2: 35+ countries with verified flagship helplines (~40 official sites fetched). Catches: SE Kvinnofridslinjen→116 016, DK Livslinien hours, NO 113=ambulance.

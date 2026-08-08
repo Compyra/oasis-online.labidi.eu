@@ -17,7 +17,7 @@ const HELP_CATS = [
 ];
 
 const HELP_DATA = {
-    updated: "2026-08-07",
+    updated: "2026-08-08",
     places: [
         {
             id: "world", icon: "🌍",
@@ -492,7 +492,7 @@ const HELP_DATA = {
                         fr: "Carte bancaire perdue ou volée ? Un seul appel bloque immédiatement vos cartes de paiement belges, à toute heure.",
                         de: "Bankkarte verloren oder gestohlen? Ein Anruf sperrt Ihre belgischen Zahlungskarten sofort, rund um die Uhr."
                     },
-                    kw: "bank card stolen lost blokkeren kaart gestolen carte volee perdue bloquer karte gestohlen sperren fraude phishing"
+                    kw: "bank card stolen lost blokkeren kaart gestolen verloren carte volee perdue bloquer karte gestohlen sperren fraude fraud phishing opposition geld money rekening"
                 },
                 {
                     id: "be-docstop", cat: "practical",
@@ -692,6 +692,19 @@ const HELP_DATA = {
                         de: "Medizinische Hilfe, die nicht bis zur nächsten Sprechstunde warten kann, aber kein Notfall ist."
                     },
                     kw: "arzt bereitschaft krank doctor gp wachtdienst"
+                },
+                {
+                    id: "de-sperrnotruf", cat: "practical",
+                    name: "Sperr-Notruf — 116 116",
+                    phone: "116 116", tel: "116116", free: true, always: true, langs: ["de"],
+                    web: "https://www.sperr-notruf.de/",
+                    desc: {
+                        en: "Bank card, credit card, online banking, SIM or German eID lost or stolen? One call blocks them — 24/7, free from German landlines. From abroad: +49 116 116.",
+                        nl: "Bankkaart, kredietkaart, online bankieren, simkaart of Duitse eID verloren of gestolen? Één telefoontje blokkeert alles — 24/7. Vanuit het buitenland: +49 116 116.",
+                        fr: "Carte bancaire, carte de crédit, banque en ligne, SIM ou eID allemande perdue ou volée ? Un appel bloque tout — 24h/24. Depuis l'étranger : +49 116 116.",
+                        de: "girocard, Kreditkarte, Online-Banking, SIM oder E-Personalausweis verloren oder gestohlen? Ein Anruf sperrt alles — rund um die Uhr, kostenlos aus dem Festnetz. Aus dem Ausland: +49 116 116."
+                    },
+                    kw: "karte sperren gestohlen verloren bank card stolen lost blocked kaart blokkeren carte bloquer opposition betrug fraud phishing sim ausweis"
                 }
             ]
         },
@@ -749,6 +762,19 @@ const HELP_DATA = {
                         de: "Nationale Nummer für Kinder in Gefahr — für Kinder, Jugendliche und besorgte Erwachsene. Kostenlos, nie auf der Rechnung."
                     },
                     kw: "enfance danger maltraitance inceste enfants children abuse"
+                },
+                {
+                    id: "fr-drogues", cat: "addiction",
+                    name: "Drogues Info Service",
+                    langs: ["fr"],
+                    web: "https://www.drogues-info-service.fr/", chat: "https://www.drogues-info-service.fr/Drogues/Chat",
+                    desc: {
+                        en: "National public service (Santé publique France) for questions about drugs, alcohol and addiction — phone 7 days a week, chat, forums and an address finder for help centres.",
+                        nl: "Nationale publieke dienst (Santé publique France) voor vragen over drugs, alcohol en verslaving — telefoon 7 dagen per week, chat en een adresgids van hulpcentra.",
+                        fr: "Service public national (Santé publique France) pour toute question sur les drogues, l'alcool et les addictions — téléphone 7j/7, chat, forums et annuaire des structures d'aide.",
+                        de: "Nationaler öffentlicher Dienst für Fragen zu Drogen, Alkohol und Sucht — Telefon an 7 Tagen, Chat und Adressverzeichnis von Hilfezentren."
+                    },
+                    kw: "drogues alcool addiction cannabis cocaine sevrage drugs verslaving overdose drogen sucht"
                 }
             ]
         },
@@ -1734,24 +1760,44 @@ const HELP_DATA = {
         {
             id: "tn", icon: "🇹🇳", continent: "af",
             name: { en: "Tunisia", nl: "Tunesië", fr: "Tunisie", de: "Tunesien" },
-            note: {
-                en: "Verified national helplines for Tunisia are still being researched — the worldwide directories can help meanwhile.",
-                nl: "Geverifieerde Tunesische hulplijnen worden nog onderzocht — de wereldwijde gidsen helpen intussen.",
-                fr: "Les lignes d'aide tunisiennes vérifiées sont encore en cours de recherche — les répertoires mondiaux peuvent aider entre-temps.",
-                de: "Geprüfte tunesische Hilfsnummern werden noch recherchiert — die weltweiten Verzeichnisse helfen einstweilen."
-            },
             entries: [
                 {
                     id: "tn-urgences", cat: "emergency",
-                    name: { en: "Emergency — 197 · 190 · 198", nl: "Nood — 197 · 190 · 198", fr: "Urgences — 197 · 190 · 198", de: "Notruf — 197 · 190 · 198" },
+                    name: { en: "Emergency — 190 · 197 · 198", nl: "Nood — 190 · 197 · 198", fr: "Urgences — 190 · 197 · 198", de: "Notruf — 190 · 197 · 198" },
                     phone: "190", tel: "190", free: true, always: true, langs: ["ar", "fr"],
                     desc: {
-                        en: "In Tunisia: 197 police, 190 SAMU ambulance, 198 civil protection (fire).",
-                        nl: "In Tunesië: 197 politie, 190 SAMU-ambulance, 198 civiele bescherming (brandweer).",
-                        fr: "En Tunisie : 197 police, 190 SAMU, 198 protection civile (pompiers).",
-                        de: "In Tunesien: 197 Polizei, 190 SAMU-Rettung, 198 Zivilschutz (Feuerwehr)."
+                        en: "In Tunisia: 190 SAMU ambulance, 197 police (towns and cities), 198 civil protection (fire and road accidents). In rural areas and villages call the National Guard: 193.",
+                        nl: "In Tunesië: 190 SAMU-ambulance, 197 politie (steden), 198 civiele bescherming (brandweer en verkeersongevallen). Op het platteland bel je de Nationale Garde: 193.",
+                        fr: "En Tunisie : 190 SAMU, 197 police (villes), 198 protection civile (pompiers et accidents de la route). En zone rurale, appelez la Garde nationale : 193.",
+                        de: "In Tunesien: 190 SAMU-Rettung, 197 Polizei (Städte), 198 Zivilschutz (Feuerwehr und Verkehrsunfälle). Auf dem Land: Nationalgarde 193."
                     },
-                    kw: "urgence police samu protection civile 197 198 emergency شرطة إسعاف"
+                    kw: "urgence police samu protection civile garde nationale 193 197 198 accident emergency شرطة إسعاف حرس نجدة"
+                },
+                {
+                    id: "tn-1809", cat: "youth",
+                    name: { en: "1809 — Child protection green line", nl: "1809 — Groene lijn kinderbescherming", fr: "1809 — Ligne verte protection de l'enfance", de: "1809 — Grüne Linie Kinderschutz" },
+                    phone: "1809", tel: "1809", free: true, langs: ["ar", "fr"],
+                    web: "http://www.femmes.gov.tn/",
+                    desc: {
+                        en: "Green line of the Ministry of the Family, Women and Children — guidance and reports when a child's best interests are threatened. Child-protection delegates (DPE) in every governorate: dpe.tn.",
+                        nl: "Groene lijn van het ministerie van Gezin, Vrouw en Kind — advies en meldingen wanneer het belang van een kind bedreigd wordt. Kinderbeschermingsgedelegeerden (DPE) in elk gouvernement: dpe.tn.",
+                        fr: "Ligne verte du ministère de la Famille, de la Femme et de l'Enfance — orientation et signalements lorsque l'intérêt supérieur d'un enfant est menacé. Délégués à la protection de l'enfance (DPE) dans chaque gouvernorat : dpe.tn.",
+                        de: "Grüne Linie des Ministeriums für Familie, Frauen und Kinder — Beratung und Meldungen, wenn das Kindeswohl bedroht ist. Kinderschutzbeauftragte (DPE) in jedem Gouvernorat: dpe.tn."
+                    },
+                    kw: "enfance danger enfant maltraitance signalement kind kinderen طفل أطفال حماية الطفولة عنف dpe"
+                },
+                {
+                    id: "tn-femmes", cat: "violence",
+                    name: { en: "Violence against women — SOS Femmes map", nl: "Geweld tegen vrouwen — SOS Femmes-kaart", fr: "Violences faites aux femmes — carte SOS Femmes", de: "Gewalt gegen Frauen — SOS-Femmes-Karte" },
+                    langs: ["ar", "fr"],
+                    web: "http://www.sosfemmesviolences.tn/",
+                    desc: {
+                        en: "Official map of services for women facing violence, run under the Ministry of Women — find listening centres, shelters and legal help per governorate.",
+                        nl: "Officiële kaart van diensten voor vrouwen die geweld meemaken, onder het ministerie van de Vrouw — vind luistercentra, opvang en juridische hulp per gouvernement.",
+                        fr: "Carte officielle des services pour les femmes victimes de violences, sous l'égide du ministère de la Femme — centres d'écoute, hébergement et aide juridique par gouvernorat.",
+                        de: "Offizielle Karte der Dienste für Frauen, die Gewalt erleben — Anlaufstellen, Unterkünfte und Rechtshilfe pro Gouvernorat."
+                    },
+                    kw: "violences femmes conjugales geweld vrouwen عنف مرأة نساء battue geslagen"
                 }
             ]
         },
@@ -2085,6 +2131,12 @@ const HELP_DATA = {
         fr: "Couverture en cours — seuls les numéros d'urgence sont listés pour l'instant. L'onglet Monde propose des répertoires officiels de lignes d'écoute pour ce pays.",
         de: "Abdeckung im Aufbau — bislang sind nur die Notrufnummern gelistet. Der Weltweit-Tab enthält offizielle Verzeichnisse von Krisen-Hotlines für dieses Land."
     };
+    const NOTE_WARN = {
+        en: "Official sources warn that emergency response here can be unreliable or limited to major cities — keep local contacts at hand. The Worldwide tab has directories with more options.",
+        nl: "Officiële bronnen waarschuwen dat de hulpdiensten hier onbetrouwbaar kunnen zijn of beperkt tot grote steden — hou lokale contacten bij de hand. Het tabblad Wereldwijd bevat gidsen met meer opties.",
+        fr: "Les sources officielles signalent que les secours peuvent être peu fiables ou limités aux grandes villes — gardez des contacts locaux à portée de main. L'onglet Monde propose d'autres options.",
+        de: "Offizielle Quellen warnen, dass Notdienste hier unzuverlässig oder auf große Städte beschränkt sein können — halten Sie lokale Kontakte bereit. Der Weltweit-Tab bietet weitere Optionen."
+    };
     const L = {
         emergency: { en: "Emergency", nl: "Noodnummer", fr: "Urgences", de: "Notruf" },
         police: { en: "Police", nl: "Politie", fr: "Police", de: "Polizei" },
@@ -2171,25 +2223,35 @@ const HELP_DATA = {
         ["th", "as", "Thailand", "p:191;a:1669;f:199;x:112;t:1155"],
         ["tj", "as", "Tajikistan", "u:112"],
         ["tl", "as", "Timor-Leste", "u:112"],
+        ["tm", "as", "Turkmenistan", "p:002;a:003;f:001"],
         ["tw", "as", "Taiwan", "p:110;a:119;f:119;x:112"],
         ["uz", "as", "Uzbekistan", "p:102;a:103;f:101;x:112"],
         ["vn", "as", "Vietnam", "p:113;a:115;f:114;x:112;c:111"],
+        ["ye", "as", "Yemen", "p:199;a:191;f:191", 1],
         // Africa
         ["ao", "af", "Angola", "p:113;a:112;f:115"],
+        ["bf", "af", "Burkina Faso", "p:17;a:18;f:18", 1],
+        ["bi", "af", "Burundi", "u:112"],
         ["bj", "af", "Benin", "p:117;a:112;f:118"],
         ["bw", "af", "Botswana", "p:999;a:997;f:998;x:112"],
+        ["cd", "af", "DR Congo", "p:112;f:118", 1],
+        ["cf", "af", "Central African Republic", "u:117", 1],
         ["ci", "af", "Côte d'Ivoire", "p:110;a:185;f:180"],
         ["cm", "af", "Cameroon", "p:117;a:119;f:118;x:112"],
         ["cv", "af", "Cape Verde", "p:132;a:130;f:131"],
         ["dj", "af", "Djibouti", "p:17;a:19;f:18"],
         ["dz", "af", "Algeria", "p:1548;a:14;f:14"],
+        ["er", "af", "Eritrea", "p:113;a:122244;f:116"],
         ["et", "af", "Ethiopia", "u:911"],
         ["ga", "af", "Gabon", "p:1730;a:1300;f:18"],
         ["gh", "af", "Ghana", "u:112"],
         ["gm", "af", "Gambia", "p:117;a:116;f:118"],
+        ["gq", "af", "Equatorial Guinea", "p:666404040;a:3101", 1],
         ["gw", "af", "Guinea-Bissau", "u:112"],
+        ["km", "af", "Comoros", "p:117;f:113"],
         ["lr", "af", "Liberia", "u:911"],
         ["ls", "af", "Lesotho", "p:123;a:121;f:122"],
+        ["ly", "af", "Libya", "u:1415", 1],
         ["ma", "af", "Morocco", "p:19;a:15;f:15;x:112"],
         ["mg", "af", "Madagascar", "p:117;a:124;f:118"],
         ["ml", "af", "Mali", "p:17;a:15;f:18"],
@@ -2198,6 +2260,7 @@ const HELP_DATA = {
         ["mw", "af", "Malawi", "p:997;a:998;f:999"],
         ["mz", "af", "Mozambique", "p:119;a:117;f:198"],
         ["na", "af", "Namibia", "p:10111"],
+        ["ne", "af", "Niger", "p:17;a:15;f:18"],
         ["rw", "af", "Rwanda", "p:112;a:912;f:112"],
         ["sc", "af", "Seychelles", "u:999;x:112"],
         ["sd", "af", "Sudan", "u:999"],
@@ -2205,6 +2268,7 @@ const HELP_DATA = {
         ["sn", "af", "Senegal", "p:17;f:18"],
         ["so", "af", "Somalia", "p:888;a:999;f:555"],
         ["ss", "af", "South Sudan", "u:999"],
+        ["st", "af", "São Tomé & Príncipe", "p:113;a:2222222;f:112"],
         ["sz", "af", "Eswatini", "p:999;a:977;f:933"],
         ["td", "af", "Chad", "p:17;f:18"],
         ["tg", "af", "Togo", "p:117;a:8200;f:118"],
@@ -2222,6 +2286,7 @@ const HELP_DATA = {
         ["co", "am", "Colombia", "u:123;x:112"],
         ["cr", "am", "Costa Rica", "u:911;x:112"],
         ["cu", "am", "Cuba", "p:106;a:104;f:105"],
+        ["dm", "am", "Dominica", "u:999"],
         ["do", "am", "Dominican Republic", "u:911;x:112"],
         ["ec", "am", "Ecuador", "u:911"],
         ["gd", "am", "Grenada", "u:911"],
@@ -2244,6 +2309,7 @@ const HELP_DATA = {
         ["ve", "am", "Venezuela", "u:911;x:171"],
         // Oceania
         ["fj", "oc", "Fiji", "u:911"],
+        ["fm", "oc", "Micronesia", "u:911"],
         ["ki", "oc", "Kiribati", "u:999;x:100"],
         ["mh", "oc", "Marshall Islands", "u:911"],
         ["nr", "oc", "Nauru", "p:110;a:111;f:112"],
@@ -2253,14 +2319,47 @@ const HELP_DATA = {
         ["to", "oc", "Tonga", "u:911"],
         ["tv", "oc", "Tuvalu", "u:911"],
         ["vu", "oc", "Vanuatu", "p:111;a:112;f:113"],
-        ["ws", "oc", "Samoa", "u:999"]
+        ["ws", "oc", "Samoa", "u:999"],
+        // Territories & dependencies (statutory numbers of the administering system)
+        ["ax", "eu", "Åland Islands", "u:112"],
+        ["fo", "eu", "Faroe Islands", "u:112"],
+        ["gi", "eu", "Gibraltar", "u:112;x:999"],
+        ["gg", "eu", "Guernsey", "u:999;x:112"],
+        ["im", "eu", "Isle of Man", "u:999;x:112"],
+        ["je", "eu", "Jersey", "u:999;x:112"],
+        ["gl", "am", "Greenland", "u:112"],
+        ["pm", "am", "St. Pierre & Miquelon", "p:17;a:15;f:18;x:112"],
+        ["gp", "am", "Guadeloupe", "p:17;a:15;f:18;x:112"],
+        ["mq", "am", "Martinique", "p:17;a:15;f:18;x:112"],
+        ["gf", "am", "French Guiana", "p:17;a:15;f:18;x:112"],
+        ["bl", "am", "St. Barthélemy", "p:17;f:18;x:112"],
+        ["mf", "am", "St. Martin", "p:17;f:18;x:112"],
+        ["aw", "am", "Aruba", "u:911"],
+        ["cw", "am", "Curaçao", "u:911;x:112"],
+        ["bq", "am", "Caribbean Netherlands", "u:911"],
+        ["bm", "am", "Bermuda", "u:911"],
+        ["ky", "am", "Cayman Islands", "u:911"],
+        ["vg", "am", "British Virgin Islands", "u:911;x:999"],
+        ["ai", "am", "Anguilla", "u:911"],
+        ["ms", "am", "Montserrat", "u:911;x:999"],
+        ["tc", "am", "Turks & Caicos", "u:911"],
+        ["vi", "am", "U.S. Virgin Islands", "u:911"],
+        ["pr", "am", "Puerto Rico", "u:911"],
+        ["re", "af", "Réunion", "p:17;a:15;f:18;x:112"],
+        ["yt", "af", "Mayotte", "p:17;a:15;f:18;x:112"],
+        ["as", "oc", "American Samoa", "u:911"],
+        ["gu", "oc", "Guam", "u:911"],
+        ["mp", "oc", "Northern Mariana Islands", "u:911"],
+        ["ck", "oc", "Cook Islands", "u:999"],
+        ["nc", "oc", "New Caledonia", "p:17;a:15;f:18;x:112"],
+        ["pf", "oc", "French Polynesia", "p:17;a:15;f:18;x:112"]
     ];
 
     const LANGS4 = ["en", "nl", "fr", "de"];
     const flagOf = iso => iso === "xk" ? "🏴" :
         String.fromCodePoint(...[...iso.toUpperCase()].map(c => 0x1F1E6 + c.charCodeAt(0) - 65));
 
-    for (const [iso, continent, enName, spec] of CORE_COUNTRIES) {
+    for (const [iso, continent, enName, spec, warn] of CORE_COUNTRIES) {
         const n = {};
         for (const part of spec.split(";")) {
             const [k, v] = part.split(":");
@@ -2289,7 +2388,7 @@ const HELP_DATA = {
         HELP_DATA.places.push({
             id: iso, iso, icon: flagOf(iso), continent,
             name: { en: enName },
-            note: continent === "eu" ? NOTE_EU : NOTE_WORLD,
+            note: warn ? NOTE_WARN : (continent === "eu" ? NOTE_EU : NOTE_WORLD),
             entries: [{
                 id: iso + "-emergency", cat: "emergency",
                 name, phone: primary, tel: primary.replace(/\s/g, ""), free: true, always: true,
@@ -2302,4 +2401,39 @@ const HELP_DATA = {
             }]
         });
     }
+
+    /* Countries where official sources confirm there is NO central emergency number. */
+    const NO_NUMBER = [
+        ["gn", "af", "Guinea", "https://www.gov.uk/foreign-travel-advice/guinea/getting-help", {
+            en: "Official sources confirm Guinea has no national emergency number. In a medical emergency, contact a clinic in Conakry directly and keep local contacts at hand.",
+            nl: "Officiële bronnen bevestigen dat Guinee geen nationaal noodnummer heeft. Neem bij een medisch noodgeval rechtstreeks contact op met een kliniek in Conakry en hou lokale contacten bij de hand.",
+            fr: "Les sources officielles confirment que la Guinée n'a pas de numéro d'urgence national. En cas d'urgence médicale, contactez directement une clinique à Conakry et gardez des contacts locaux à portée de main.",
+            de: "Offizielle Quellen bestätigen, dass Guinea keine nationale Notrufnummer hat. Kontaktieren Sie im medizinischen Notfall direkt eine Klinik in Conakry und halten Sie lokale Kontakte bereit."
+        }],
+        ["cg", "af", "Congo - Brazzaville", "https://www.gov.uk/foreign-travel-advice/congo/getting-help", {
+            en: "Official sources confirm the Republic of Congo has no central emergency number, and phone numbers can be unreliable. Find local medical facilities in advance and keep their details with you.",
+            nl: "Officiële bronnen bevestigen dat de Republiek Congo geen centraal noodnummer heeft; telefoonnummers zijn er onbetrouwbaar. Zoek vooraf lokale medische voorzieningen op en hou hun gegevens bij je.",
+            fr: "Les sources officielles confirment que la République du Congo n'a pas de numéro d'urgence central et que les numéros de téléphone y sont peu fiables. Repérez à l'avance les structures médicales locales.",
+            de: "Offizielle Quellen bestätigen, dass die Republik Kongo keine zentrale Notrufnummer hat; Telefonnummern sind unzuverlässig. Suchen Sie medizinische Einrichtungen vorab und halten Sie deren Daten bereit."
+        }]
+    ];
+    for (const [iso, continent, enName, web, desc] of NO_NUMBER) {
+        HELP_DATA.places.push({
+            id: iso, iso, icon: flagOf(iso), continent,
+            name: { en: enName }, note: NOTE_WARN,
+            entries: [{
+                id: iso + "-emergency", cat: "emergency",
+                name: {
+                    en: "No central emergency number", nl: "Geen centraal noodnummer",
+                    fr: "Pas de numéro d'urgence central", de: "Keine zentrale Notrufnummer"
+                },
+                web, desc,
+                kw: "emergency no number geen nummer pas de numéro keine nummer clinic hospital"
+            }]
+        });
+    }
 })();
+
+/* Country centroids (Google DSPL public-domain dataset) for the offline
+   "use my location" feature - nearest-centroid matching, no network calls. */
+const GEO_CENTROIDS = { ax:[60.18,19.92], bl:[17.90,-62.83], bq:[12.18,-68.26], cw:[12.17,-68.99], mf:[18.08,-63.05], ss:[7.86,29.69], ad:[42.55,1.60], ae:[23.42,53.85], af:[33.94,67.71], ag:[17.06,-61.80], ai:[18.22,-63.07], al:[41.15,20.17], am:[40.07,45.04], ao:[-11.20,17.87], ar:[-38.42,-63.62], as:[-14.27,-170.13], at:[47.52,14.55], au:[-25.27,133.78], aw:[12.52,-69.97], az:[40.14,47.58], ba:[43.92,17.68], bb:[13.19,-59.54], bd:[23.68,90.36], be:[50.50,4.47], bf:[12.24,-1.56], bg:[42.73,25.49], bh:[25.93,50.64], bi:[-3.37,29.92], bj:[9.31,2.32], bm:[32.32,-64.76], bn:[4.54,114.73], bo:[-16.29,-63.59], br:[-14.24,-51.93], bs:[25.03,-77.40], bt:[27.51,90.43], bw:[-22.33,24.68], by:[53.71,27.95], bz:[17.19,-88.50], ca:[56.13,-106.35], cd:[-4.04,21.76], cf:[6.61,20.94], cg:[-0.23,15.83], ch:[46.82,8.23], ci:[7.54,-5.55], ck:[-21.24,-159.78], cl:[-35.68,-71.54], cm:[7.37,12.35], cn:[35.86,104.20], co:[4.57,-74.30], cr:[9.75,-83.75], cu:[21.52,-77.78], cv:[16.00,-24.01], cy:[35.13,33.43], cz:[49.82,15.47], de:[51.17,10.45], dj:[11.83,42.59], dk:[56.26,9.50], dm:[15.41,-61.37], do:[18.74,-70.16], dz:[28.03,1.66], ec:[-1.83,-78.18], ee:[58.60,25.01], eg:[26.82,30.80], er:[15.18,39.78], es:[40.46,-3.75], et:[9.14,40.49], fi:[61.92,25.75], fj:[-16.58,179.41], fm:[7.43,150.55], fo:[61.89,-6.91], fr:[46.23,2.21], ga:[-0.80,11.61], gd:[12.26,-61.60], ge:[42.32,43.36], gf:[3.93,-53.13], gg:[49.47,-2.59], gh:[7.95,-1.02], gi:[36.14,-5.35], gl:[71.71,-42.60], gm:[13.44,-15.31], gn:[9.95,-9.70], gp:[17.00,-62.07], gq:[1.65,10.27], gr:[39.07,21.82], gt:[15.78,-90.23], gu:[13.44,144.79], gw:[11.80,-15.18], gy:[4.86,-58.93], hk:[22.40,114.11], hn:[15.20,-86.24], hr:[45.10,15.20], ht:[18.97,-72.29], hu:[47.16,19.50], id:[-0.79,113.92], ie:[53.41,-8.24], il:[31.05,34.85], im:[54.24,-4.55], in:[20.59,78.96], iq:[33.22,43.68], ir:[32.43,53.69], is:[64.96,-19.02], it:[41.87,12.57], je:[49.21,-2.13], jm:[18.11,-77.30], jo:[30.59,36.24], jp:[36.20,138.25], ke:[-0.02,37.91], kg:[41.20,74.77], kh:[12.57,104.99], ki:[-3.37,-168.73], km:[-11.88,43.87], kn:[17.36,-62.78], kr:[35.91,127.77], kw:[29.31,47.48], ky:[19.51,-80.57], kz:[48.02,66.92], la:[19.86,102.50], lb:[33.85,35.86], lc:[13.91,-60.98], li:[47.17,9.56], lk:[7.87,80.77], lr:[6.43,-9.43], ls:[-29.61,28.23], lt:[55.17,23.88], lu:[49.82,6.13], lv:[56.88,24.60], ly:[26.34,17.23], ma:[31.79,-7.09], mc:[43.75,7.41], md:[47.41,28.37], me:[42.71,19.37], mg:[-18.77,46.87], mh:[7.13,171.18], mk:[41.61,21.75], ml:[17.57,-4.00], mm:[21.91,95.96], mn:[46.86,103.85], mo:[22.20,113.54], mp:[17.33,145.38], mq:[14.64,-61.02], mr:[21.01,-10.94], ms:[16.74,-62.19], mt:[35.94,14.38], mu:[-20.35,57.55], mv:[3.20,73.22], mw:[-13.25,34.30], mx:[23.63,-102.55], my:[4.21,101.98], mz:[-18.67,35.53], na:[-22.96,18.49], nc:[-20.90,165.62], ne:[17.61,8.08], ng:[9.08,8.68], ni:[12.87,-85.21], nl:[52.13,5.29], no:[60.47,8.47], np:[28.39,84.12], nr:[-0.52,166.93], nz:[-40.90,174.89], om:[21.51,55.92], pa:[8.54,-80.78], pe:[-9.19,-75.02], pf:[-17.68,-149.41], pg:[-6.31,143.96], ph:[12.88,121.77], pk:[30.38,69.35], pl:[51.92,19.15], pm:[46.94,-56.27], pr:[18.22,-66.59], ps:[31.95,35.23], pt:[39.40,-8.22], pw:[7.51,134.58], py:[-23.44,-58.44], qa:[25.35,51.18], re:[-21.12,55.54], ro:[45.94,24.97], rs:[44.02,21.01], ru:[61.52,105.32], rw:[-1.94,29.87], sa:[23.89,45.08], sb:[-9.65,160.16], sc:[-4.68,55.49], sd:[12.86,30.22], se:[60.13,18.64], sg:[1.35,103.82], si:[46.15,15.00], sk:[48.67,19.70], sl:[8.46,-11.78], sm:[43.94,12.46], sn:[14.50,-14.45], so:[5.15,46.20], sr:[3.92,-56.03], st:[0.19,6.61], sv:[13.79,-88.90], sy:[34.80,39.00], sz:[-26.52,31.47], tc:[21.69,-71.80], td:[15.45,18.73], tg:[8.62,0.82], th:[15.87,100.99], tj:[38.86,71.28], tl:[-8.87,125.73], tm:[38.97,59.56], tn:[33.89,9.54], to:[-21.18,-175.20], tr:[38.96,35.24], tt:[10.69,-61.22], tv:[-7.11,177.65], tw:[23.70,120.96], tz:[-6.37,34.89], ua:[48.38,31.17], ug:[1.37,32.29], uk:[55.38,-3.44], us:[37.09,-95.71], uy:[-32.52,-55.77], uz:[41.38,64.59], vc:[12.98,-61.29], ve:[6.42,-66.59], vg:[18.42,-64.64], vi:[18.34,-64.90], vn:[14.06,108.28], vu:[-15.38,166.96], ws:[-13.76,-172.10], xk:[42.60,20.90], ye:[15.55,48.52], yt:[-12.83,45.17], za:[-30.56,22.94], zm:[-13.13,27.85], zw:[-19.02,29.15] };
