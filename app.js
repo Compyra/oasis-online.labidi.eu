@@ -31,6 +31,8 @@
             nearby: "Near you",
             contEu: "Europe", contAm: "Americas", contAf: "Africa", contAs: "Asia", contOc: "Oceania",
             noResults: "Nothing found. Try another word — or call 112 in an emergency.",
+            elsewhere: "Matches in other countries",
+            showEntry: "Show in",
             verified: "All numbers verified against their official sources on",
             disclaimer: "This site lists official services only and is not itself an emergency service. Spotted an error? Please tell us — a wrong number can cost precious time."
         },
@@ -59,6 +61,8 @@
             nearby: "Bij jou in de buurt",
             contEu: "Europa", contAm: "Amerika", contAf: "Afrika", contAs: "Azië", contOc: "Oceanië",
             noResults: "Niets gevonden. Probeer een ander woord — of bel 112 bij nood.",
+            elsewhere: "Resultaten in andere landen",
+            showEntry: "Toon in",
             verified: "Alle nummers gecontroleerd bij hun officiële bron op",
             disclaimer: "Deze site toont enkel officiële diensten en is zelf geen nooddienst. Fout gezien? Laat het ons weten — een verkeerd nummer kan kostbare tijd kosten."
         },
@@ -87,6 +91,8 @@
             nearby: "Près de vous",
             contEu: "Europe", contAm: "Amériques", contAf: "Afrique", contAs: "Asie", contOc: "Océanie",
             noResults: "Rien trouvé. Essayez un autre mot — ou appelez le 112 en cas d'urgence.",
+            elsewhere: "Résultats dans d'autres pays",
+            showEntry: "Voir dans",
             verified: "Tous les numéros ont été vérifiés auprès de leur source officielle le",
             disclaimer: "Ce site ne référence que des services officiels et n'est pas lui-même un service d'urgence. Une erreur ? Signalez-la-nous — un mauvais numéro peut coûter un temps précieux."
         },
@@ -115,6 +121,8 @@
             nearby: "In Ihrer Nähe",
             contEu: "Europa", contAm: "Amerika", contAf: "Afrika", contAs: "Asien", contOc: "Ozeanien",
             noResults: "Nichts gefunden. Versuchen Sie ein anderes Wort — oder rufen Sie im Notfall 112 an.",
+            elsewhere: "Treffer in anderen Ländern",
+            showEntry: "Anzeigen in",
             verified: "Alle Nummern wurden am folgenden Datum bei ihrer offiziellen Quelle geprüft:",
             disclaimer: "Diese Seite listet nur offizielle Dienste und ist selbst kein Notdienst. Fehler entdeckt? Bitte melden — eine falsche Nummer kann wertvolle Zeit kosten."
         }
@@ -466,6 +474,30 @@
         return hits;
     }
 
+    /* Global search: the same tokens tried against every other place, so a
+       specific service, number or site is findable without picking its country
+       first. Skips CAT_KW (too generic across 230 places) — matches only on the
+       entry's own name/number/keywords/description. */
+    function globalMatches(tokens) {
+        const hits = [];
+        for (const p of HELP_DATA.places) {
+            if (p.id === state.place) continue;
+            for (const e of p.entries) {
+                const hay = norm([
+                    loc(e.name), typeof e.name === "object" ? Object.values(e.name).join(" ") : "",
+                    e.phone || "", (e.phone || "").replace(/\s/g, ""),
+                    e.kw || "", e.web || "",
+                    loc(e.desc), e.desc && typeof e.desc === "object" ? (e.desc.en || "") : ""
+                ].join(" "));
+                if (tokens.every(tok => hay.includes(tok))) {
+                    hits.push({ place: p, entry: e });
+                    if (hits.length >= 9) return hits;
+                }
+            }
+        }
+        return hits;
+    }
+
     function card(entry) {
         const art = el("article", "card");
         art.append(el("h3", null, loc(entry.name)));
@@ -540,6 +572,7 @@
 
         if (!pool.length) {
             els.results.append(el("p", "empty", t("noResults")));
+            renderElsewhere(tokens);
             return;
         }
 
@@ -547,6 +580,7 @@
             const grid = el("div", "results-grid");
             for (const e of pool) grid.append(card(e));
             els.results.append(grid);
+            renderElsewhere(tokens);
             return;
         }
 
@@ -560,6 +594,28 @@
             for (const e of inCat) grid.append(card(e));
             els.results.append(grid);
         }
+    }
+
+    /* Cards from other countries, each opening its country on tap. */
+    function renderElsewhere(tokens) {
+        if (tokens.length < 1 || !tokens.some(tok => tok.length >= 3 || /^\d+$/.test(tok))) return;
+        const hits = globalMatches(tokens);
+        if (!hits.length) return;
+        const h = el("h2", "group-title");
+        h.append(el("span", null, "🌐 "), el("span", null, t("elsewhere")));
+        els.results.append(h);
+        const grid = el("div", "results-grid");
+        for (const hit of hits) {
+            const art = card(hit.entry);
+            const from = el("button", "card-place");
+            from.type = "button";
+            from.append(el("span", null, hit.place.icon + " "), el("span", null, placeLabel(hit.place)));
+            from.setAttribute("aria-label", t("showEntry") + " " + placeLabel(hit.place));
+            from.addEventListener("click", () => selectPlace(hit.place.id));
+            art.prepend(from);
+            grid.append(art);
+        }
+        els.results.append(grid);
     }
 
     function renderAll() {

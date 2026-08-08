@@ -76,6 +76,32 @@ const HELP_DATA = {
                         de: "Finden Sie die offizielle Kinder-Hotline Ihres Landes — kostenlose Hilfe für Kinder und Jugendliche, weltweit."
                     },
                     kw: "children youth kids helpline kinderen jongeren kindertelefoon enfants jeunes kinder jugendliche"
+                },
+                {
+                    id: "w-unhcr", cat: "practical",
+                    name: "UNHCR Help — for refugees",
+                    langs: ["en", "fr", "ar", "es"],
+                    web: "https://help.unhcr.org/",
+                    desc: {
+                        en: "The UN Refugee Agency's help site for refugees, asylum seekers, stateless and displaced people — pick your country for local rights, procedures and contact points.",
+                        nl: "De hulpsite van de VN-Vluchtelingenorganisatie voor vluchtelingen, asielzoekers en staatlozen — kies je land voor lokale rechten, procedures en contactpunten.",
+                        fr: "Le site d'aide du HCR pour les réfugiés, demandeurs d'asile, apatrides et déplacés — choisissez votre pays pour les droits, procédures et contacts locaux.",
+                        de: "Die Hilfeseite des UN-Flüchtlingswerks für Geflüchtete, Asylsuchende und Staatenlose — Land wählen für Rechte, Verfahren und Anlaufstellen vor Ort."
+                    },
+                    kw: "refugee asylum vluchteling asiel réfugié asile flüchtling asyl stateless displaced لاجئ لجوء unhcr"
+                },
+                {
+                    id: "w-inhope", cat: "violence",
+                    name: "INHOPE — report child sexual abuse material",
+                    langs: ["en"],
+                    web: "https://www.inhope.org/EN",
+                    desc: {
+                        en: "Global network of 58 hotlines where you can anonymously report child sexual abuse material seen online — find the reporting hotline for your country.",
+                        nl: "Wereldwijd netwerk van 58 meldpunten waar je anoniem online beeldmateriaal van kindermisbruik kunt melden — vind het meldpunt van je land.",
+                        fr: "Réseau mondial de 58 hotlines où signaler anonymement du matériel d'abus sexuel d'enfants vu en ligne — trouvez la hotline de votre pays.",
+                        de: "Weltweites Netz von 58 Meldestellen, bei denen Sie online gesehene Missbrauchsdarstellungen von Kindern anonym melden können — finden Sie die Meldestelle Ihres Landes."
+                    },
+                    kw: "report abuse images csam online kindermisbruik melden signaler missbrauch melden cybertip hotline"
                 }
             ]
         },
@@ -1390,6 +1416,19 @@ const HELP_DATA = {
                         de: "Finnlands Krisentelefon — rund um die Uhr auf Finnisch; Schwedisch 09 2525 0112, Arabisch/Englisch 09 2525 0113 (begrenzte Zeiten)."
                     },
                     kw: "kriisi itsemurha crisis suicide"
+                },
+                {
+                    id: "fi-116117", cat: "emergency",
+                    name: "116 117 — Medical Helpline",
+                    phone: "116 117", tel: "116117", free: true, always: true, langs: ["fi", "sv", "en"],
+                    web: "https://116117.fi/en/Index",
+                    desc: {
+                        en: "Advice on acute health problems that are not a 112 emergency — call before going to the clinic. Everywhere in Finland except Åland, 24/7, free.",
+                        nl: "Advies bij acute gezondheidsproblemen die geen 112-noodgeval zijn — bel vóór je naar de kliniek gaat. Heel Finland behalve Åland, 24/7, gratis.",
+                        fr: "Conseils pour les problèmes de santé aigus qui ne relèvent pas du 112 — appelez avant d'aller à la clinique. Partout en Finlande sauf Åland, 24h/24, gratuit.",
+                        de: "Rat bei akuten Gesundheitsproblemen, die kein 112-Notfall sind — vor dem Klinikbesuch anrufen. Überall in Finnland außer Åland, rund um die Uhr, kostenlos."
+                    },
+                    kw: "päivystysapu sairas lääkäri doctor medical sick ziek arzt krank"
                 }
             ]
         },
@@ -1925,6 +1964,19 @@ const HELP_DATA = {
                         de: "Der staatliche indische Tele-Mental-Health-Dienst — kostenlos, in vielen Sprachen; auch 1-800-891-4416."
                     },
                     kw: "mental health counselling suicide crisis manas"
+                },
+                {
+                    id: "in-1098", cat: "youth",
+                    name: "Childline — 1098",
+                    phone: "1098", tel: "1098", free: true, langs: ["hi", "en"],
+                    web: "https://www.childlineindia.org/",
+                    desc: {
+                        en: "India's helpline for children in need of care and protection, now run under the Ministry of Women and Child Development (Mission Vatsalya). In an immediate emergency call 112.",
+                        nl: "De Indiase hulplijn voor kinderen die zorg en bescherming nodig hebben, onder het ministerie van Vrouw en Kind (Mission Vatsalya). Bij acuut gevaar bel 112.",
+                        fr: "La ligne indienne pour les enfants ayant besoin de soins et de protection, gérée par le ministère de la Femme et de l'Enfant (Mission Vatsalya). En urgence immédiate, appelez le 112.",
+                        de: "Indiens Hotline für Kinder, die Schutz brauchen — unter dem Ministerium für Frauen und Kinder (Mission Vatsalya). Bei akuter Gefahr 112 anrufen."
+                    },
+                    kw: "children child abuse rescue बच्चे 1098 childline"
                 }
             ]
         },
@@ -2160,7 +2212,7 @@ const HELP_DATA = {
         ["hu", "eu", "Hungary", "u:112"],
         ["ro", "eu", "Romania", "u:112"],
         ["bg", "eu", "Bulgaria", "u:112"],
-        ["gr", "eu", "Greece", "u:112"],
+        ["gr", "eu", "Greece", "u:112;x:100 · 166 · 199;c:1056"],
         ["hr", "eu", "Croatia", "u:112"],
         ["si", "eu", "Slovenia", "u:112"],
         ["ee", "eu", "Estonia", "u:112"],
@@ -2345,6 +2397,8 @@ const HELP_DATA = {
         ["tc", "am", "Turks & Caicos", "u:911"],
         ["vi", "am", "U.S. Virgin Islands", "u:911"],
         ["pr", "am", "Puerto Rico", "u:911"],
+        ["sx", "am", "Sint Maarten", "p:911;a:912;f:919;c:918"],
+        ["fk", "am", "Falkland Islands", "u:999"],
         ["re", "af", "Réunion", "p:17;a:15;f:18;x:112"],
         ["yt", "af", "Mayotte", "p:17;a:15;f:18;x:112"],
         ["as", "oc", "American Samoa", "u:911"],
@@ -2436,4 +2490,4 @@ const HELP_DATA = {
 
 /* Country centroids (Google DSPL public-domain dataset) for the offline
    "use my location" feature - nearest-centroid matching, no network calls. */
-const GEO_CENTROIDS = { ax:[60.18,19.92], bl:[17.90,-62.83], bq:[12.18,-68.26], cw:[12.17,-68.99], mf:[18.08,-63.05], ss:[7.86,29.69], ad:[42.55,1.60], ae:[23.42,53.85], af:[33.94,67.71], ag:[17.06,-61.80], ai:[18.22,-63.07], al:[41.15,20.17], am:[40.07,45.04], ao:[-11.20,17.87], ar:[-38.42,-63.62], as:[-14.27,-170.13], at:[47.52,14.55], au:[-25.27,133.78], aw:[12.52,-69.97], az:[40.14,47.58], ba:[43.92,17.68], bb:[13.19,-59.54], bd:[23.68,90.36], be:[50.50,4.47], bf:[12.24,-1.56], bg:[42.73,25.49], bh:[25.93,50.64], bi:[-3.37,29.92], bj:[9.31,2.32], bm:[32.32,-64.76], bn:[4.54,114.73], bo:[-16.29,-63.59], br:[-14.24,-51.93], bs:[25.03,-77.40], bt:[27.51,90.43], bw:[-22.33,24.68], by:[53.71,27.95], bz:[17.19,-88.50], ca:[56.13,-106.35], cd:[-4.04,21.76], cf:[6.61,20.94], cg:[-0.23,15.83], ch:[46.82,8.23], ci:[7.54,-5.55], ck:[-21.24,-159.78], cl:[-35.68,-71.54], cm:[7.37,12.35], cn:[35.86,104.20], co:[4.57,-74.30], cr:[9.75,-83.75], cu:[21.52,-77.78], cv:[16.00,-24.01], cy:[35.13,33.43], cz:[49.82,15.47], de:[51.17,10.45], dj:[11.83,42.59], dk:[56.26,9.50], dm:[15.41,-61.37], do:[18.74,-70.16], dz:[28.03,1.66], ec:[-1.83,-78.18], ee:[58.60,25.01], eg:[26.82,30.80], er:[15.18,39.78], es:[40.46,-3.75], et:[9.14,40.49], fi:[61.92,25.75], fj:[-16.58,179.41], fm:[7.43,150.55], fo:[61.89,-6.91], fr:[46.23,2.21], ga:[-0.80,11.61], gd:[12.26,-61.60], ge:[42.32,43.36], gf:[3.93,-53.13], gg:[49.47,-2.59], gh:[7.95,-1.02], gi:[36.14,-5.35], gl:[71.71,-42.60], gm:[13.44,-15.31], gn:[9.95,-9.70], gp:[17.00,-62.07], gq:[1.65,10.27], gr:[39.07,21.82], gt:[15.78,-90.23], gu:[13.44,144.79], gw:[11.80,-15.18], gy:[4.86,-58.93], hk:[22.40,114.11], hn:[15.20,-86.24], hr:[45.10,15.20], ht:[18.97,-72.29], hu:[47.16,19.50], id:[-0.79,113.92], ie:[53.41,-8.24], il:[31.05,34.85], im:[54.24,-4.55], in:[20.59,78.96], iq:[33.22,43.68], ir:[32.43,53.69], is:[64.96,-19.02], it:[41.87,12.57], je:[49.21,-2.13], jm:[18.11,-77.30], jo:[30.59,36.24], jp:[36.20,138.25], ke:[-0.02,37.91], kg:[41.20,74.77], kh:[12.57,104.99], ki:[-3.37,-168.73], km:[-11.88,43.87], kn:[17.36,-62.78], kr:[35.91,127.77], kw:[29.31,47.48], ky:[19.51,-80.57], kz:[48.02,66.92], la:[19.86,102.50], lb:[33.85,35.86], lc:[13.91,-60.98], li:[47.17,9.56], lk:[7.87,80.77], lr:[6.43,-9.43], ls:[-29.61,28.23], lt:[55.17,23.88], lu:[49.82,6.13], lv:[56.88,24.60], ly:[26.34,17.23], ma:[31.79,-7.09], mc:[43.75,7.41], md:[47.41,28.37], me:[42.71,19.37], mg:[-18.77,46.87], mh:[7.13,171.18], mk:[41.61,21.75], ml:[17.57,-4.00], mm:[21.91,95.96], mn:[46.86,103.85], mo:[22.20,113.54], mp:[17.33,145.38], mq:[14.64,-61.02], mr:[21.01,-10.94], ms:[16.74,-62.19], mt:[35.94,14.38], mu:[-20.35,57.55], mv:[3.20,73.22], mw:[-13.25,34.30], mx:[23.63,-102.55], my:[4.21,101.98], mz:[-18.67,35.53], na:[-22.96,18.49], nc:[-20.90,165.62], ne:[17.61,8.08], ng:[9.08,8.68], ni:[12.87,-85.21], nl:[52.13,5.29], no:[60.47,8.47], np:[28.39,84.12], nr:[-0.52,166.93], nz:[-40.90,174.89], om:[21.51,55.92], pa:[8.54,-80.78], pe:[-9.19,-75.02], pf:[-17.68,-149.41], pg:[-6.31,143.96], ph:[12.88,121.77], pk:[30.38,69.35], pl:[51.92,19.15], pm:[46.94,-56.27], pr:[18.22,-66.59], ps:[31.95,35.23], pt:[39.40,-8.22], pw:[7.51,134.58], py:[-23.44,-58.44], qa:[25.35,51.18], re:[-21.12,55.54], ro:[45.94,24.97], rs:[44.02,21.01], ru:[61.52,105.32], rw:[-1.94,29.87], sa:[23.89,45.08], sb:[-9.65,160.16], sc:[-4.68,55.49], sd:[12.86,30.22], se:[60.13,18.64], sg:[1.35,103.82], si:[46.15,15.00], sk:[48.67,19.70], sl:[8.46,-11.78], sm:[43.94,12.46], sn:[14.50,-14.45], so:[5.15,46.20], sr:[3.92,-56.03], st:[0.19,6.61], sv:[13.79,-88.90], sy:[34.80,39.00], sz:[-26.52,31.47], tc:[21.69,-71.80], td:[15.45,18.73], tg:[8.62,0.82], th:[15.87,100.99], tj:[38.86,71.28], tl:[-8.87,125.73], tm:[38.97,59.56], tn:[33.89,9.54], to:[-21.18,-175.20], tr:[38.96,35.24], tt:[10.69,-61.22], tv:[-7.11,177.65], tw:[23.70,120.96], tz:[-6.37,34.89], ua:[48.38,31.17], ug:[1.37,32.29], uk:[55.38,-3.44], us:[37.09,-95.71], uy:[-32.52,-55.77], uz:[41.38,64.59], vc:[12.98,-61.29], ve:[6.42,-66.59], vg:[18.42,-64.64], vi:[18.34,-64.90], vn:[14.06,108.28], vu:[-15.38,166.96], ws:[-13.76,-172.10], xk:[42.60,20.90], ye:[15.55,48.52], yt:[-12.83,45.17], za:[-30.56,22.94], zm:[-13.13,27.85], zw:[-19.02,29.15] };
+const GEO_CENTROIDS = { fk:[-51.80,-59.52], sx:[18.04,-63.07], ax:[60.18,19.92], bl:[17.90,-62.83], bq:[12.18,-68.26], cw:[12.17,-68.99], mf:[18.08,-63.05], ss:[7.86,29.69], ad:[42.55,1.60], ae:[23.42,53.85], af:[33.94,67.71], ag:[17.06,-61.80], ai:[18.22,-63.07], al:[41.15,20.17], am:[40.07,45.04], ao:[-11.20,17.87], ar:[-38.42,-63.62], as:[-14.27,-170.13], at:[47.52,14.55], au:[-25.27,133.78], aw:[12.52,-69.97], az:[40.14,47.58], ba:[43.92,17.68], bb:[13.19,-59.54], bd:[23.68,90.36], be:[50.50,4.47], bf:[12.24,-1.56], bg:[42.73,25.49], bh:[25.93,50.64], bi:[-3.37,29.92], bj:[9.31,2.32], bm:[32.32,-64.76], bn:[4.54,114.73], bo:[-16.29,-63.59], br:[-14.24,-51.93], bs:[25.03,-77.40], bt:[27.51,90.43], bw:[-22.33,24.68], by:[53.71,27.95], bz:[17.19,-88.50], ca:[56.13,-106.35], cd:[-4.04,21.76], cf:[6.61,20.94], cg:[-0.23,15.83], ch:[46.82,8.23], ci:[7.54,-5.55], ck:[-21.24,-159.78], cl:[-35.68,-71.54], cm:[7.37,12.35], cn:[35.86,104.20], co:[4.57,-74.30], cr:[9.75,-83.75], cu:[21.52,-77.78], cv:[16.00,-24.01], cy:[35.13,33.43], cz:[49.82,15.47], de:[51.17,10.45], dj:[11.83,42.59], dk:[56.26,9.50], dm:[15.41,-61.37], do:[18.74,-70.16], dz:[28.03,1.66], ec:[-1.83,-78.18], ee:[58.60,25.01], eg:[26.82,30.80], er:[15.18,39.78], es:[40.46,-3.75], et:[9.14,40.49], fi:[61.92,25.75], fj:[-16.58,179.41], fm:[7.43,150.55], fo:[61.89,-6.91], fr:[46.23,2.21], ga:[-0.80,11.61], gd:[12.26,-61.60], ge:[42.32,43.36], gf:[3.93,-53.13], gg:[49.47,-2.59], gh:[7.95,-1.02], gi:[36.14,-5.35], gl:[71.71,-42.60], gm:[13.44,-15.31], gn:[9.95,-9.70], gp:[17.00,-62.07], gq:[1.65,10.27], gr:[39.07,21.82], gt:[15.78,-90.23], gu:[13.44,144.79], gw:[11.80,-15.18], gy:[4.86,-58.93], hk:[22.40,114.11], hn:[15.20,-86.24], hr:[45.10,15.20], ht:[18.97,-72.29], hu:[47.16,19.50], id:[-0.79,113.92], ie:[53.41,-8.24], il:[31.05,34.85], im:[54.24,-4.55], in:[20.59,78.96], iq:[33.22,43.68], ir:[32.43,53.69], is:[64.96,-19.02], it:[41.87,12.57], je:[49.21,-2.13], jm:[18.11,-77.30], jo:[30.59,36.24], jp:[36.20,138.25], ke:[-0.02,37.91], kg:[41.20,74.77], kh:[12.57,104.99], ki:[-3.37,-168.73], km:[-11.88,43.87], kn:[17.36,-62.78], kr:[35.91,127.77], kw:[29.31,47.48], ky:[19.51,-80.57], kz:[48.02,66.92], la:[19.86,102.50], lb:[33.85,35.86], lc:[13.91,-60.98], li:[47.17,9.56], lk:[7.87,80.77], lr:[6.43,-9.43], ls:[-29.61,28.23], lt:[55.17,23.88], lu:[49.82,6.13], lv:[56.88,24.60], ly:[26.34,17.23], ma:[31.79,-7.09], mc:[43.75,7.41], md:[47.41,28.37], me:[42.71,19.37], mg:[-18.77,46.87], mh:[7.13,171.18], mk:[41.61,21.75], ml:[17.57,-4.00], mm:[21.91,95.96], mn:[46.86,103.85], mo:[22.20,113.54], mp:[17.33,145.38], mq:[14.64,-61.02], mr:[21.01,-10.94], ms:[16.74,-62.19], mt:[35.94,14.38], mu:[-20.35,57.55], mv:[3.20,73.22], mw:[-13.25,34.30], mx:[23.63,-102.55], my:[4.21,101.98], mz:[-18.67,35.53], na:[-22.96,18.49], nc:[-20.90,165.62], ne:[17.61,8.08], ng:[9.08,8.68], ni:[12.87,-85.21], nl:[52.13,5.29], no:[60.47,8.47], np:[28.39,84.12], nr:[-0.52,166.93], nz:[-40.90,174.89], om:[21.51,55.92], pa:[8.54,-80.78], pe:[-9.19,-75.02], pf:[-17.68,-149.41], pg:[-6.31,143.96], ph:[12.88,121.77], pk:[30.38,69.35], pl:[51.92,19.15], pm:[46.94,-56.27], pr:[18.22,-66.59], ps:[31.95,35.23], pt:[39.40,-8.22], pw:[7.51,134.58], py:[-23.44,-58.44], qa:[25.35,51.18], re:[-21.12,55.54], ro:[45.94,24.97], rs:[44.02,21.01], ru:[61.52,105.32], rw:[-1.94,29.87], sa:[23.89,45.08], sb:[-9.65,160.16], sc:[-4.68,55.49], sd:[12.86,30.22], se:[60.13,18.64], sg:[1.35,103.82], si:[46.15,15.00], sk:[48.67,19.70], sl:[8.46,-11.78], sm:[43.94,12.46], sn:[14.50,-14.45], so:[5.15,46.20], sr:[3.92,-56.03], st:[0.19,6.61], sv:[13.79,-88.90], sy:[34.80,39.00], sz:[-26.52,31.47], tc:[21.69,-71.80], td:[15.45,18.73], tg:[8.62,0.82], th:[15.87,100.99], tj:[38.86,71.28], tl:[-8.87,125.73], tm:[38.97,59.56], tn:[33.89,9.54], to:[-21.18,-175.20], tr:[38.96,35.24], tt:[10.69,-61.22], tv:[-7.11,177.65], tw:[23.70,120.96], tz:[-6.37,34.89], ua:[48.38,31.17], ug:[1.37,32.29], uk:[55.38,-3.44], us:[37.09,-95.71], uy:[-32.52,-55.77], uz:[41.38,64.59], vc:[12.98,-61.29], ve:[6.42,-66.59], vg:[18.42,-64.64], vi:[18.34,-64.90], vn:[14.06,108.28], vu:[-15.38,166.96], ws:[-13.76,-172.10], xk:[42.60,20.90], ye:[15.55,48.52], yt:[-12.83,45.17], za:[-30.56,22.94], zm:[-13.13,27.85], zw:[-19.02,29.15] };

@@ -2,7 +2,7 @@
 
 > Generated from data.js (verified 2026-08-08) on 2026-08-08 by tools/build-country-md.py — do not edit by hand.
 > Every number was verified against an official source before shipping; see todo.md for the method.
-**229 countries & territories** — 36 with full verified helpline sets, the rest with cross-checked emergency numbers.
+**231 countries & territories** — 36 with full verified helpline sets, the rest with cross-checked emergency numbers.
 
 ## Global layers
 
@@ -11,6 +11,8 @@
 - **Find a Helpline** — [site](https://findahelpline.com/) — Free directory of verified suicide- and crisis-helplines in over 100 countries. Pick your country, get the right number, call or chat.
 - **Befrienders Worldwide** — [site](https://befrienders.org/) — Worldwide network of volunteer-run emotional-support centres. Find a centre near you to talk about whatever you are going through.
 - **Child Helpline International** — [site](https://childhelplineinternational.org/helplines/) — Find the official child helpline for your country — free help for children and young people, worldwide.
+- **UNHCR Help — for refugees** — [site](https://help.unhcr.org/) — The UN Refugee Agency's help site for refugees, asylum seekers, stateless and displaced people — pick your country for local rights, procedures and contact points.
+- **INHOPE — report child sexual abuse material** — [site](https://www.inhope.org/EN) — Global network of 58 hotlines where you can anonymously report child sexual abuse material seen online — find the reporting hotline for your country.
 
 ### 🇪🇺 Europe
 - **112 — European emergency number** — **112** (24/7, free) — One number for ambulance, fire brigade and police — free, day and night, in every EU country and many more (United Kingdom, Norway, Switzerland…).
@@ -95,6 +97,8 @@
 - **112 — Emergency** — **112** (24/7, free) — All emergencies in Finland — one number for police, medical and fire.
 *Suicide & someone to talk to*
 - **MIELI Kriisipuhelin — 09 2525 0111** — **09 2525 0111** (24/7) — [site](https://mieli.fi/) — Finland's crisis line — 24/7 in Finnish; Swedish 09 2525 0112, Arabic/English 09 2525 0113 (limited hours, see site).
+*Emergency*
+- **116 117 — Medical Helpline** — **116 117** (24/7, free) — [site](https://116117.fi/en/Index) — Advice on acute health problems that are not a 112 emergency — call before going to the clinic. Everywhere in Finland except Åland, 24/7, free.
 
 ### 🇫🇷 France `fr` — full coverage
 *Emergency*
@@ -124,7 +128,7 @@
 *Practical help & information*
 - **Sperr-Notruf — 116 116** — **116 116** (24/7, free) — [site](https://www.sperr-notruf.de/) — Bank card, credit card, online banking, SIM or German eID lost or stolen? One call blocks them — 24/7, free from German landlines. From abroad: +49 116 116.
 - 🇬🇮 **Gibraltar** `gi` — All emergencies **112** · Also works **999**
-- 🇬🇷 **Greece** `gr` — All emergencies **112**
+- 🇬🇷 **Greece** `gr` — All emergencies **112** · Also works **100 · 166 · 199** · Children in danger **1056**
 - 🇬🇬 **Guernsey** `gg` — All emergencies **999** · Also works **112**
 - 🇭🇺 **Hungary** `hu` — All emergencies **112**
 
@@ -252,7 +256,7 @@
 - **National Domestic Abuse Helpline** — **0808 2000 247** (24/7, free) — [site](https://www.nationaldahelpline.org.uk/) · [chat](https://www.nationaldahelpline.org.uk/chat-to-us-online/) — Run by Refuge: free, confidential support for women experiencing domestic abuse — 24 hours a day, in many languages. In emergency call 999.
 - 🇦🇽 **Åland Islands** `ax` — All emergencies **112**
 
-## Americas (53)
+## Americas (55)
 - 🇦🇮 **Anguilla** `ai` — All emergencies **911**
 - 🇦🇬 **Antigua and Barbuda** `ag` — All emergencies **911** · Also works **999**
 
@@ -297,6 +301,7 @@
 - 🇩🇴 **Dominican Republic** `do` — All emergencies **911** · Also works **112**
 - 🇪🇨 **Ecuador** `ec` — All emergencies **911**
 - 🇸🇻 **El Salvador** `sv` — Police **911** · Ambulance **132** · Fire brigade **913**
+- 🇫🇰 **Falkland Islands** `fk` — All emergencies **999**
 - 🇬🇫 **French Guiana** `gf` — Police **17** · Ambulance **15** · Fire brigade **18** · Also works **112**
 - 🇬🇱 **Greenland** `gl` — All emergencies **112**
 - 🇬🇩 **Grenada** `gd` — All emergencies **911**
@@ -322,6 +327,7 @@
 - 🇰🇳 **Saint Kitts and Nevis** `kn` — All emergencies **911**
 - 🇱🇨 **Saint Lucia** `lc` — All emergencies **911** · Also works **999**
 - 🇻🇨 **Saint Vincent and the Grenadines** `vc` — All emergencies **999** · Also works **911**
+- 🇸🇽 **Sint Maarten** `sx` — Police **911** · Ambulance **912** · Fire brigade **919** · Children in danger **918**
 - 🇧🇱 **St. Barthélemy** `bl` — Police **17** · Fire brigade **18** · Also works **112**
 - 🇲🇫 **St. Martin** `mf` — Police **17** · Fire brigade **18** · Also works **112**
 - 🇵🇲 **St. Pierre & Miquelon** `pm` — Police **17** · Ambulance **15** · Fire brigade **18** · Also works **112**
@@ -436,6 +442,8 @@
 - **112 — Emergency** — **112** (24/7, free) — India's single emergency number for police, fire and medical help.
 *Suicide & someone to talk to*
 - **Tele-MANAS — 14416** — **14416** (24/7, free) — [site](https://telemanas.mohfw.gov.in/) — The Government of India's tele-mental-health service — free counselling in many Indian languages; also 1-800-891-4416.
+*Children & young people*
+- **Childline — 1098** — **1098** (free) — [site](https://www.childlineindia.org/) — India's helpline for children in need of care and protection, now run under the Ministry of Women and Child Development (Mission Vatsalya). In an immediate emergency call 112.
 - 🇮🇩 **Indonesia** `id` — Police **110** · Ambulance **119** · Fire brigade **113** · Also works **112**
 - 🇮🇷 **Iran** `ir` — Police **110** · Ambulance **115** · Fire brigade **125**
 - 🇮🇶 **Iraq** `iq` — All emergencies **112** · Also works **911**

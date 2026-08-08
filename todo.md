@@ -1,11 +1,13 @@
 # todo — Oasis Online
 
-**State (2026-08-08, v6):** 231 places · 229 countries & territories · 330+ entries.
+**State (2026-08-08, v7):** 233 places · 231 countries & territories · 340+ entries.
 37 countries have verified national helpline sets ("full"); the rest carry
-cross-checked emergency numbers ("core"), incl. 33 territories/dependencies and
+cross-checked emergency numbers ("core"), incl. 35 territories/dependencies and
 2 countries officially confirmed to have **no** central number (GN, CG).
 UX: 📍 use-my-location (offline nearest-centroid, `GEO_CENTROIDS` in data.js) +
-continent quick-picks + per-category situation keywords (`CAT_KW` in app.js).
+continent quick-picks + per-category situation keywords (`CAT_KW` in app.js) +
+global search across all countries (`globalMatches` — find a service/number/site
+without picking its country first).
 Full per-country reference: [country.md](country.md) — regenerate with
 `python tools/build-country-md.py` after every data.js change.
 Data lives in [data.js](data.js) — handwritten places on top, the `CORE_COUNTRIES`
@@ -31,6 +33,7 @@ fact). Still absent:
 ## 2 · Pending number verifications (specific leads)
 
 - KR **109** suicide line (launched 2024) · JP Inochi no Denwa **0570-783-556** + Yorisoi **0120-279-338** · PH NCMH **1553** · AR CAS **135** · PT SOS Voz Amiga · Childline Kenya **116**.
+- ICRC **Restoring Family Links** (familylinks.icrc.org — 403 on fetch 08-08; add to world layer once reachable).
 - Card-opposition numbers to verify & add: FR **0 892 705 705** (refetch service-public.gouv.fr F2428 — old service-public.fr URL redirects) · NL per-bank? · UK 159 anti-fraud line.
 - Blocked fetches to retry: sosdetresse.lu (403) · kjt.lu · 112.public.lu (all three LU sources down 08-08 — LU full upgrade blocked) · respectseniors.be (down) · mind.se detail page · kidshelpline.com.au · 116006.fr (unparsable).
 - TN follow-ups: seniors green line **1833** (seen on femmes.gov.tn, verify scope) · drogues/mental-health lines.
@@ -54,6 +57,7 @@ own site confirms.
 
 ## Log (compact)
 
+- **08-08** v7: full cross-check against Wikipedia "List of emergency telephone numbers" (231 wiki countries diffed against data.js). Verdict: our numbers hold — FCDO confirms Libya **1415** (wiki's 1515 is outdated) and Eritrea ambulance **122244**; remaining diff = deliberate omissions (utility outages, non-emergency lines) or wiki parser noise. Fixed real gaps: **SX Sint Maarten** (911/912/919 + child 918, sintmaartengov.org) and **FK Falklands** (999, FCDO) added; GR enriched (100/166/199 + child line **1056** per gov.gr); IN **Childline 1098** (childlineindia.org, now Mission Vatsalya); FI **116 117** medical helpline (116117.fi). World layer +2: **UNHCR Help** (refugees) and **INHOPE** (report CSAM). New: global search — tokens also tried against every other place, matches render as flag-chip cards that jump to their country ("988", "samaritans", "1098" findable from anywhere). QA: 0 audit errors, 233 places walked, 0 console errors, 0 overflow @320px.
 - **08-08** v6: TN upgraded to full (FCDO: 190 SAMU / 197 police / 198 fire / 193 National Guard rural; ministry green line **1809** child protection; SOS Femmes map) · DE **116 116** Sperr-Notruf (card/eID blocking, sperr-notruf.de) · FR Drogues Info Service · richer stolen-card keywords on Card Stop/Doc Stop · 📍 use-my-location button (offline `GEO_CENTROIDS` nearest-centroid, top-3 "near you" chips for border correction, stuck-prompt guard) · continent quick-pick buttons · `CAT_KW` situation-keyword layer (overdose/geslagen/mobbing/harcèlement… ×4 langs). QA: 0 audit errors, 231 places walked, 0 console errors, 0 overflow @320px.
 - **08-08** v5: last 16 countries verified via FCDO travel advice (BF BI CD CF DM ER FM GQ KM LY NE ST TM YE added; GN & CG shipped as "no central number"); +33 territories (PR GL FO AW CW BM KY …); ⚠️ reliability-warning notes; SOS banner handles no-number countries; country.md + tools/build-country-md.py.
 - **08-07** v4: travel numbers (TH 1155, EG 126, KR 1330, JP #7119, CN 122, VN 111, KH 1280) · locale auto-detect + `?place=` links · type-a-country-in-search chips · Intl label caching · lean todo.

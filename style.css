@@ -333,6 +333,21 @@ main {
     box-shadow: var(--shadow);
 }
 
+.card .card-place {
+    align-self: flex-start;
+    min-height: 34px;
+    padding: 0 .7rem;
+    font: inherit;
+    font-size: .85rem;
+    font-weight: 700;
+    background: var(--brand-soft);
+    color: var(--brand);
+    border: 1.5px solid var(--brand);
+    border-radius: 999px;
+    cursor: pointer;
+}
+.card .card-place:hover { background: var(--brand); color: var(--brand-ink); }
+
 .card h3 {
     margin: 0;
     font-size: 1.06rem;
