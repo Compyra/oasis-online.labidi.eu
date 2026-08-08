@@ -102,6 +102,39 @@ const HELP_DATA = {
                         de: "Weltweites Netz von 58 Meldestellen, bei denen Sie online gesehene Missbrauchsdarstellungen von Kindern anonym melden können — finden Sie die Meldestelle Ihres Landes."
                     },
                     kw: "report abuse images csam online kindermisbruik melden signaler missbrauch melden cybertip hotline"
+                },
+                {
+                    id: "w-card", cat: "practical",
+                    name: { en: "Bank card lost, stolen or phished?", nl: "Bankkaart verloren, gestolen of gephisht?", fr: "Carte bancaire perdue, volée ou pigée par phishing ?", de: "Bankkarte verloren, gestohlen oder gephisht?" },
+                    desc: {
+                        en: "Act now: 1) block the card in your banking app or call your bank — the emergency number is on the back of your card and on your bank's website; 2) never share PIN or codes, your bank never asks for them; 3) report to the police (needed for refunds); 4) check your statements. National blocking lines exist in some countries — Belgium: Card Stop 078 170 170, Germany: 116 116.",
+                        nl: "Handel meteen: 1) blokkeer de kaart in je bankapp of bel je bank — het noodnummer staat achterop je kaart en op de site van je bank; 2) deel nooit pincodes, je bank vraagt er nooit naar; 3) doe aangifte bij de politie (nodig voor terugbetaling); 4) controleer je rekeningen. Sommige landen hebben één blokkeerlijn — België: Card Stop 078 170 170, Duitsland: 116 116.",
+                        fr: "Agissez tout de suite : 1) bloquez la carte dans votre app bancaire ou appelez votre banque — le numéro d'urgence figure au dos de votre carte et sur le site de votre banque ; 2) ne partagez jamais vos codes, votre banque ne les demande jamais ; 3) portez plainte à la police (nécessaire pour le remboursement) ; 4) vérifiez vos comptes. Certains pays ont une ligne unique — Belgique : Card Stop 078 170 170, Allemagne : 116 116.",
+                        de: "Handeln Sie sofort: 1) Karte in der Banking-App sperren oder die Bank anrufen — die Notrufnummer steht auf der Kartenrückseite und auf der Website Ihrer Bank; 2) niemals PIN oder Codes weitergeben, Ihre Bank fragt nie danach; 3) Anzeige bei der Polizei erstatten (nötig für die Erstattung); 4) Kontoauszge prüfen. Manche Länder haben eine zentrale Sperrnummer — Belgien: Card Stop 078 170 170, Deutschland: 116 116."
+                    },
+                    kw: "card stolen lost phished hacked blocked kaart gestolen verloren gephisht gehackt blokkeren carte volee perdue phishing bloquer karte gestohlen gesperrt bank fraud fraude oplichting scam betrug money geld"
+                },
+                {
+                    id: "w-phone", cat: "practical",
+                    name: { en: "Phone or SIM stolen?", nl: "Telefoon of simkaart gestolen?", fr: "Téléphone ou SIM volé ?", de: "Handy oder SIM gestohlen?" },
+                    desc: {
+                        en: "1) Call your mobile operator at once to block the SIM (prevents costly calls and SMS-code abuse); 2) locate or erase the phone via Find My (Apple) or Find My Device (Google); 3) change your main passwords (e-mail first); 4) report to the police with the IMEI number — find it on the box or your operator account.",
+                        nl: "1) Bel meteen je provider om de simkaart te blokkeren (voorkomt kosten en misbruik van sms-codes); 2) lokaliseer of wis de telefoon via Zoek mijn (Apple) of Vind mijn apparaat (Google); 3) wijzig je belangrijkste wachtwoorden (eerst e-mail); 4) doe aangifte met het IMEI-nummer — dat staat op de doos of in je klantaccount.",
+                        fr: "1) Appelez immédiatement votre opérateur pour bloquer la SIM (évite les frais et l'abus des codes SMS) ; 2) localisez ou effacez le téléphone via Localiser (Apple) ou Trouver mon appareil (Google) ; 3) changez vos mots de passe principaux (l'e-mail d'abord) ; 4) portez plainte avec le numéro IMEI — sur la boîte ou votre compte client.",
+                        de: "1) Sofort den Mobilfunkanbieter anrufen und die SIM sperren lassen (verhindert Kosten und SMS-Code-Missbrauch); 2) Handy orten oder löschen über „Wo ist?“ (Apple) oder „Mein Gerät finden“ (Google); 3) wichtigste Passwörter ändern (zuerst E-Mail); 4) Anzeige mit der IMEI-Nummer erstatten — sie steht auf der Verpackung oder im Kundenkonto."
+                    },
+                    kw: "phone stolen sim block telefoon gsm gestolen simkaart blokkeren telephone vole portable bloquer handy gestohlen sperren imei hacked gehackt account"
+                },
+                {
+                    id: "w-docs", cat: "practical",
+                    name: { en: "Passport or ID lost abroad?", nl: "Paspoort of ID verloren in het buitenland?", fr: "Passeport ou pièce d'identité perdus à l'étranger ?", de: "Pass oder Ausweis im Ausland verloren?" },
+                    desc: {
+                        en: "1) Report it to the local police and keep the report — you need it for a replacement and insurance; 2) contact your country's embassy or consulate for an emergency travel document; 3) if cards were with it, block them too. Belgians can block ID documents worldwide via Doc Stop 00800 2123 2123.",
+                        nl: "1) Doe aangifte bij de lokale politie en bewaar het bewijs — nodig voor een vervangdocument en de verzekering; 2) contacteer de ambassade of het consulaat van je land voor een noodreisdocument; 3) zaten er kaarten bij, blokkeer die ook. Belgen blokkeren identiteitsdocumenten wereldwijd via Doc Stop 00800 2123 2123.",
+                        fr: "1) Déclarez la perte à la police locale et gardez le récépissé — nécessaire pour un document de remplacement et l'assurance ; 2) contactez l'ambassade ou le consulat de votre pays pour un document de voyage d'urgence ; 3) si des cartes étaient avec, bloquez-les aussi. Les Belges bloquent leurs documents via Doc Stop 00800 2123 2123.",
+                        de: "1) Bei der örtlichen Polizei melden und die Bestätigung aufbewahren — nötig für Ersatzdokument und Versicherung; 2) Botschaft oder Konsulat Ihres Landes für ein Notreisedokument kontaktieren; 3) waren Karten dabei, auch diese sperren. Belgier sperren Ausweisdokumente weltweit über Doc Stop 00800 2123 2123."
+                    },
+                    kw: "passport id lost stolen abroad embassy consulate paspoort identiteitskaart verloren gestolen buitenland ambassade passeport perdu vole etranger consulat reisepass ausweis verloren gestohlen ausland botschaft konsulat documents papieren papiers"
                 }
             ]
         },
@@ -165,6 +198,19 @@ const HELP_DATA = {
                         de: "Telefonseelsorge in vielen EU-Ländern — ein Mensch, der zuhört, bei Einsamkeit, Krisen oder Suizidgedanken."
                     },
                     kw: "suicide crisis listening zelfmoord luisteren eenzaam suicide ecoute solitude suizid zuhören einsam"
+                },
+                {
+                    id: "eu-116117", cat: "emergency",
+                    name: { en: "116 117 — Non-urgent medical help", nl: "116 117 — Niet-dringende medische hulp", fr: "116 117 — Aide médicale non urgente", de: "116 117 — Ärztlicher Bereitschaftsdienst" },
+                    phone: "116 117", tel: "116117", free: true,
+                    hours: { en: "Availability varies by country", nl: "Beschikbaarheid verschilt per land", fr: "Disponibilité variable selon le pays", de: "Verfügbarkeit je nach Land unterschiedlich" },
+                    desc: {
+                        en: "The EU-reserved number for out-of-hours medical help that is not a 112 emergency — active in Germany, Austria, Finland, Norway and more.",
+                        nl: "Het EU-nummer voor medische hulp buiten de kantooruren die geen 112-noodgeval is — actief in o.a. Duitsland, Oostenrijk, Finland en Noorwegen.",
+                        fr: "Le numéro réservé par l'UE pour l'aide médicale non urgente en dehors des heures d'ouverture — actif en Allemagne, Autriche, Finlande, Norvège…",
+                        de: "Die EU-weit reservierte Nummer für ärztliche Hilfe außerhalb der Sprechzeiten, die kein 112-Notfall ist — aktiv u. a. in Deutschland, Österreich, Finnland und Norwegen."
+                    },
+                    kw: "doctor gp sick ziek dokter wachtdienst medecin garde malade arzt krank bereitschaft"
                 },
                 {
                     id: "eu-116006", cat: "violence",
@@ -535,6 +581,19 @@ const HELP_DATA = {
                     kw: "identity card passport stolen identiteitskaart paspoort gestolen carte identite passeport vole ausweis reisepass gestohlen"
                 },
                 {
+                    id: "be-safeonweb", cat: "practical",
+                    name: "Safeonweb — report phishing & fraud",
+                    langs: ["nl", "fr", "de", "en"],
+                    web: "https://www.safeonweb.be/",
+                    desc: {
+                        en: "Official cyber-security portal of the Belgian government (Centre for Cybersecurity Belgium) — report suspicious messages and online fraud, check current phishing waves and get first-aid steps after being hacked.",
+                        nl: "Officiële cyberveiligheidsportaal van de Belgische overheid (Centrum voor Cybersecurity) — meld verdachte berichten en onlinefraude, bekijk actuele phishinggolven en krijg eerstehulpstappen na een hack.",
+                        fr: "Portail officiel de cybersécurité du gouvernement belge (Centre pour la Cybersécurité) — signalez les messages suspects et la fraude en ligne, consultez les vagues de phishing en cours et les gestes de premiers secours après un piratage.",
+                        de: "Offizielles Cybersicherheitsportal der belgischen Regierung — verdächtige Nachrichten und Online-Betrug melden, aktuelle Phishing-Wellen einsehen und Erste-Hilfe-Schritte nach einem Hack erhalten."
+                    },
+                    kw: "phishing fraude oplichting verdacht bericht melden hack gehackt scam arnaque signaler betrug melden cyber online"
+                },
+                {
                     id: "be-1700", cat: "practical",
                     name: "1700 — Vlaamse overheid",
                     phone: "1700", tel: "1700", free: true,
@@ -635,6 +694,19 @@ const HELP_DATA = {
                         de: "Nationale Beratungs- und Meldestelle für häusliche Gewalt und Kindesmisshandlung (auf Niederländisch)."
                     },
                     kw: "huiselijk geweld kindermishandeling melden domestic violence abuse"
+                },
+                {
+                    id: "nl-fraudehelpdesk", cat: "practical",
+                    name: "Fraudehelpdesk — 088 786 73 72",
+                    phone: "088 786 73 72", tel: "0887867372", langs: ["nl"],
+                    web: "https://www.fraudehelpdesk.nl/",
+                    desc: {
+                        en: "The Netherlands' first port of call after (attempted) fraud — report scams, phishing mails, fake calls and online swindle, and hear what to do next.",
+                        nl: "Hét eerste loket bij (poging tot) oplichting — meld scams, phishingmails, valse telefoontjes en onlinefraude, en hoor wat je nu moet doen.",
+                        fr: "Le premier guichet néerlandais après une (tentative de) fraude — signalez arnaques, e-mails de phishing et faux appels, et sachez quoi faire ensuite.",
+                        de: "Die erste Anlaufstelle der Niederlande nach (versuchtem) Betrug — melden Sie Scams, Phishing-Mails und falsche Anrufe und erfahren Sie die nächsten Schritte."
+                    },
+                    kw: "fraude oplichting phishing melden gehackt hack valse mail scam bank kaart gestolen betrug fraud"
                 }
             ]
         },
@@ -731,6 +803,20 @@ const HELP_DATA = {
                         de: "girocard, Kreditkarte, Online-Banking, SIM oder E-Personalausweis verloren oder gestohlen? Ein Anruf sperrt alles — rund um die Uhr, kostenlos aus dem Festnetz. Aus dem Ausland: +49 116 116."
                     },
                     kw: "karte sperren gestohlen verloren bank card stolen lost blocked kaart blokkeren carte bloquer opposition betrug fraud phishing sim ausweis"
+                },
+                {
+                    id: "de-116006", cat: "violence",
+                    name: "Opfer-Telefon — 116 006",
+                    phone: "116 006", tel: "116006", free: true, langs: ["de"],
+                    hours: { en: "Daily 7:00–22:00", nl: "Dagelijks 7–22 u", fr: "Tous les jours 7h–22h", de: "Täglich 7–22 Uhr" },
+                    web: "https://weisser-ring.de/hilfe-fuer-opfer/opfer-telefon",
+                    desc: {
+                        en: "WEISSER RING's victim helpline — free, anonymous support after any crime (violence, theft, fraud, stalking), with referral to local victim aid across Germany.",
+                        nl: "De slachtofferlijn van WEISSER RING — gratis, anonieme steun na elk misdrijf (geweld, diefstal, fraude, stalking), met doorverwijzing naar lokale hulp in heel Duitsland.",
+                        fr: "La ligne d'aide aux victimes de WEISSER RING — soutien gratuit et anonyme après toute infraction (violence, vol, fraude, harcèlement), avec orientation locale.",
+                        de: "Das Opfer-Telefon des WEISSEN RINGS — kostenlose, anonyme Unterstützung nach einer Straftat (Gewalt, Diebstahl, Betrug, Stalking), mit Vermittlung an Hilfe vor Ort."
+                    },
+                    kw: "opfer straftat gewalt diebstahl betrug stalking victim crime slachtoffer misdrijf victime hilfe"
                 }
             ]
         },
@@ -801,6 +887,19 @@ const HELP_DATA = {
                         de: "Nationaler öffentlicher Dienst für Fragen zu Drogen, Alkohol und Sucht — Telefon an 7 Tagen, Chat und Adressverzeichnis von Hilfezentren."
                     },
                     kw: "drogues alcool addiction cannabis cocaine sevrage drugs verslaving overdose drogen sucht"
+                },
+                {
+                    id: "fr-opposition", cat: "practical",
+                    name: { en: "Card stolen — make opposition", nl: "Kaart gestolen — verzet aantekenen", fr: "Carte volée — faire opposition", de: "Karte gestohlen — sperren lassen" },
+                    langs: ["fr"],
+                    web: "https://www.service-public.gouv.fr/particuliers/vosdroits/F2428",
+                    desc: {
+                        en: "Official steps after your card is stolen in France: 1) make opposition immediately via your bank (number on the back of your card or your banking app); 2) file a police report; 3) if you were not negligent, the bank refunds fraudulent payments. Full guide on service-public.gouv.fr.",
+                        nl: "Officiële stappen na diefstal van je kaart in Frankrijk: 1) teken meteen verzet aan via je bank (nummer achterop je kaart of in je bankapp); 2) doe aangifte; 3) zonder nalatigheid betaalt de bank frauduleuze uitgaven terug. Volledige gids op service-public.gouv.fr.",
+                        fr: "Démarche officielle après le vol de votre carte : 1) faites opposition immédiatement auprès de votre banque (numéro au dos de la carte ou dans votre app) ; 2) portez plainte à la police ou gendarmerie ; 3) sans négligence de votre part, la banque rembourse les sommes fraudées. Guide complet sur service-public.gouv.fr.",
+                        de: "Offizielle Schritte nach Kartendiebstahl in Frankreich: 1) Karte sofort über Ihre Bank sperren lassen (Nummer auf der Kartenrückseite oder in der App); 2) Anzeige erstatten; 3) ohne Fahrlässigkeit erstattet die Bank betrügerische Zahlungen. Vollständige Anleitung auf service-public.gouv.fr."
+                    },
+                    kw: "opposition carte volee perdue banque card stolen lost bank kaart gestolen karte gestohlen phishing fraude remboursement plainte"
                 }
             ]
         },
@@ -920,6 +1019,32 @@ const HELP_DATA = {
                         de: "Kostenlose, vertrauliche Unterstützung für Frauen bei häuslicher Gewalt — rund um die Uhr. Im Notfall: 999."
                     },
                     kw: "domestic abuse violence women refuge"
+                },
+                {
+                    id: "uk-159", cat: "practical",
+                    name: "159 — Stop Scams UK",
+                    phone: "159", tel: "159", langs: ["en"],
+                    web: "https://stopscamsuk.org.uk/159",
+                    desc: {
+                        en: "Unexpected call about a financial matter? Hang up and dial 159 — it connects you safely and directly with your own bank and cannot be spoofed. Covers 99% of UK current accounts.",
+                        nl: "Onverwacht telefoontje over geld of je bank? Hang op en bel 159 — je wordt veilig en rechtstreeks met je eigen bank verbonden; het nummer kan niet vervalst worden.",
+                        fr: "Appel inattendu au sujet d'argent ou de votre banque ? Raccrochez et composez le 159 — vous êtes mis en relation directe et sûre avec votre propre banque ; le numéro ne peut pas être usurpé.",
+                        de: "Unerwarteter Anruf zu Geld oder Ihrer Bank? Auflegen und 159 wählen — Sie werden sicher und direkt mit Ihrer eigenen Bank verbunden; die Nummer kann nicht gefälscht werden."
+                    },
+                    kw: "scam fraud bank call phishing vishing spoofing oplichting fraude betrug card stolen hacked"
+                },
+                {
+                    id: "uk-actionfraud", cat: "practical",
+                    name: "Action Fraud",
+                    phone: "0300 123 2040", tel: "03001232040", langs: ["en"],
+                    web: "https://www.reportfraud.police.uk/",
+                    desc: {
+                        en: "The UK's national reporting centre for fraud and cybercrime — report scams, phishing, hacked accounts and online fraud, online or by phone.",
+                        nl: "Het nationale meldpunt van het VK voor fraude en cybercriminaliteit — meld oplichting, phishing, gehackte accounts en onlinefraude, online of telefonisch.",
+                        fr: "Le centre national britannique de signalement de la fraude et de la cybercriminalité — signalez arnaques, phishing, comptes piratés et fraude en ligne.",
+                        de: "Die nationale Meldestelle des Vereinigten Königreichs für Betrug und Cyberkriminalität — melden Sie Scams, Phishing, gehackte Konten und Online-Betrug."
+                    },
+                    kw: "fraud cybercrime report scam phishing hacked hack oplichting melden fraude betrug anzeige online"
                 }
             ]
         },

@@ -13,12 +13,16 @@
 - **Child Helpline International** — [site](https://childhelplineinternational.org/helplines/) — Find the official child helpline for your country — free help for children and young people, worldwide.
 - **UNHCR Help — for refugees** — [site](https://help.unhcr.org/) — The UN Refugee Agency's help site for refugees, asylum seekers, stateless and displaced people — pick your country for local rights, procedures and contact points.
 - **INHOPE — report child sexual abuse material** — [site](https://www.inhope.org/EN) — Global network of 58 hotlines where you can anonymously report child sexual abuse material seen online — find the reporting hotline for your country.
+- **Bank card lost, stolen or phished?** — Act now: 1) block the card in your banking app or call your bank — the emergency number is on the back of your card and on your bank's website; 2) never share PIN or codes, your bank never asks for them; 3) report to the police (needed for refunds); 4) check your statements. National blocking lines exist in some countries — Belgium: Card Stop 078 170 170, Germany: 116 116.
+- **Phone or SIM stolen?** — 1) Call your mobile operator at once to block the SIM (prevents costly calls and SMS-code abuse); 2) locate or erase the phone via Find My (Apple) or Find My Device (Google); 3) change your main passwords (e-mail first); 4) report to the police with the IMEI number — find it on the box or your operator account.
+- **Passport or ID lost abroad?** — 1) Report it to the local police and keep the report — you need it for a replacement and insurance; 2) contact your country's embassy or consulate for an emergency travel document; 3) if cards were with it, block them too. Belgians can block ID documents worldwide via Doc Stop 00800 2123 2123.
 
 ### 🇪🇺 Europe
 - **112 — European emergency number** — **112** (24/7, free) — One number for ambulance, fire brigade and police — free, day and night, in every EU country and many more (United Kingdom, Norway, Switzerland…).
 - **116 000 — Missing children** — **116 000** (Availability varies by country, free) — European hotline for missing children — report a disappearance or get support, in every EU country.
 - **116 111 — Child helplines** — **116 111** (Availability varies by country, free) — Reaches the national child helpline in most EU countries — for children and young people who need help or someone to listen.
 - **116 123 — Emotional support** — **116 123** (Availability varies by country, free) — Emotional-support helpline available in many EU countries — a human listener when you are lonely, in crisis or thinking about suicide.
+- **116 117 — Non-urgent medical help** — **116 117** (Availability varies by country, free) — The EU-reserved number for out-of-hours medical help that is not a 112 emergency — active in Germany, Austria, Finland, Norway and more.
 - **116 006 — Victims of crime** — **116 006** (Available in some EU countries, free) — Helpline for victims of crime — emotional support, information on your rights and referral to victim support, where the line is active.
 - **Europe Direct** — **00 800 6 7 8 9 10 11** (Mon–Fri, office hours, free) — [site](https://european-union.europa.eu/contact-eu_en) — Official information service of the European Union — ask any question about the EU and your rights, in any official EU language.
 
@@ -69,6 +73,7 @@
 *Practical help & information*
 - **Card Stop** — **078 170 170** (24/7) — [site](https://www.cardstop.be/) — Bank card lost or stolen? One call blocks your Belgian payment cards immediately, any time of day.
 - **Doc Stop** — **00800 2123 2123** (24/7, free) — [site](https://www.docstop.be/) — Belgian identity card or passport lost or stolen? Block it immediately against fraud — reachable from anywhere in the world.
+- **Safeonweb — report phishing & fraud** — [site](https://www.safeonweb.be/) — Official cyber-security portal of the Belgian government (Centre for Cybersecurity Belgium) — report suspicious messages and online fraud, check current phishing waves and get first-aid steps after being hacked.
 - **1700 — Vlaamse overheid** — **1700** (Mon–Fri 9:00–19:00, free) — [site](https://www.vlaanderen.be/vlaamse-infolijn) — The information line of the Flemish government — questions about benefits, care, housing, school allowances and every other public service (Dutch).
 - **1718 — Wallonie** — **1718** (Mon–Fri 8:30–17:00, free) — [site](https://www.wallonie.be/fr/1718) — Free information number of the Walloon public service — help finding the right service, aid or benefit (French). German speakers dial 1719.
 - 🇧🇦 **Bosnia and Herzegovina** `ba` — Police **122** · Ambulance **124** · Fire brigade **123**
@@ -111,6 +116,8 @@
 - **119 — Allô Enfance en Danger** — **119** (24/7, free) — [site](https://www.allo119.gouv.fr/) · [chat](https://www.allo119.gouv.fr/) — National number for children in danger — for children, teenagers and worried adults. Free from any phone, never on the bill. Chat 15:00–20:30.
 *Drugs, alcohol & addiction*
 - **Drogues Info Service** — [site](https://www.drogues-info-service.fr/) · [chat](https://www.drogues-info-service.fr/Drogues/Chat) — National public service (Santé publique France) for questions about drugs, alcohol and addiction — phone 7 days a week, chat, forums and an address finder for help centres.
+*Practical help & information*
+- **Card stolen — make opposition** — [site](https://www.service-public.gouv.fr/particuliers/vosdroits/F2428) — Official steps after your card is stolen in France: 1) make opposition immediately via your bank (number on the back of your card or your banking app); 2) file a police report; 3) if you were not negligent, the bank refunds fraudulent payments. Full guide on service-public.gouv.fr.
 - 🇬🇪 **Georgia** `ge` — All emergencies **112**
 
 ### 🇩🇪 Germany `de` — full coverage
@@ -127,6 +134,8 @@
 - **116 117 — Out-of-hours medical service** — **116 117** (free) — [site](https://www.116117.de/) — Medical help that cannot wait until the next practice opening, but is not a 112 emergency.
 *Practical help & information*
 - **Sperr-Notruf — 116 116** — **116 116** (24/7, free) — [site](https://www.sperr-notruf.de/) — Bank card, credit card, online banking, SIM or German eID lost or stolen? One call blocks them — 24/7, free from German landlines. From abroad: +49 116 116.
+*Violence, abuse & sexual assault*
+- **Opfer-Telefon — 116 006** — **116 006** (Daily 7:00–22:00, free) — [site](https://weisser-ring.de/hilfe-fuer-opfer/opfer-telefon) — WEISSER RING's victim helpline — free, anonymous support after any crime (violence, theft, fraud, stalking), with referral to local victim aid across Germany.
 - 🇬🇮 **Gibraltar** `gi` — All emergencies **112** · Also works **999**
 - 🇬🇷 **Greece** `gr` — All emergencies **112** · Also works **100 · 166 · 199** · Children in danger **1056**
 - 🇬🇬 **Guernsey** `gg` — All emergencies **999** · Also works **112**
@@ -182,6 +191,8 @@
 - **De Kindertelefoon** — **0800-0432** (Daily 11:00–21:00, free) — [site](https://www.kindertelefoon.nl/) · [chat](https://www.kindertelefoon.nl/chatten) — For all children and young people in the Netherlands — call or chat about anything, anonymously (Dutch).
 *Violence, abuse & sexual assault*
 - **Veilig Thuis** — **0800-2000** (24/7, free) — [site](https://veiligthuis.nl/) · [chat](https://veiligthuis.nl/) — National advice and reporting point for domestic violence and child abuse — for victims, witnesses and professionals. Chat 24/7.
+*Practical help & information*
+- **Fraudehelpdesk — 088 786 73 72** — **088 786 73 72** — [site](https://www.fraudehelpdesk.nl/) — The Netherlands' first port of call after (attempted) fraud — report scams, phishing mails, fake calls and online swindle, and hear what to do next.
 - 🇲🇰 **North Macedonia** `mk` — Police **192** · Ambulance **194** · Fire brigade **193** · Also works **112**
 
 ### 🇳🇴 Norway `no` — full coverage
@@ -254,6 +265,9 @@
 - **Childline — 0800 1111** — **0800 1111** (free) — [site](https://www.childline.org.uk/) · [chat](https://www.childline.org.uk/get-support/) — For anyone under 19 in the UK — about anything. Calls are free and don't show on the bill. 1-2-1 counsellor chat online.
 *Violence, abuse & sexual assault*
 - **National Domestic Abuse Helpline** — **0808 2000 247** (24/7, free) — [site](https://www.nationaldahelpline.org.uk/) · [chat](https://www.nationaldahelpline.org.uk/chat-to-us-online/) — Run by Refuge: free, confidential support for women experiencing domestic abuse — 24 hours a day, in many languages. In emergency call 999.
+*Practical help & information*
+- **159 — Stop Scams UK** — **159** — [site](https://stopscamsuk.org.uk/159) — Unexpected call about a financial matter? Hang up and dial 159 — it connects you safely and directly with your own bank and cannot be spoofed. Covers 99% of UK current accounts.
+- **Action Fraud** — **0300 123 2040** — [site](https://www.reportfraud.police.uk/) — The UK's national reporting centre for fraud and cybercrime — report scams, phishing, hacked accounts and online fraud, online or by phone.
 - 🇦🇽 **Åland Islands** `ax` — All emergencies **112**
 
 ## Americas (55)

@@ -446,7 +446,7 @@
         youth: "bullying pesten gepest harcelement mobbing school ecole schule teen tiener ado jugendliche puber parents ouders eltern sexting grooming exam examen stress",
         violence: "beaten geslagen battu geschlagen frappe hit rape verkracht verkrachting viol vergewaltigung assault aanranding agression stalking belaagd threat bedreiging menace drohung abuse misbruik maltraitance missbrauch partner huiselijk domestic conjugale hauslich incest trafficking mensenhandel forced gedwongen unsafe onveilig scared bang peur",
         addiction: "overdose drunk dronken ivre betrunken drugs drogue drogen alcohol alcool alkohol gambling gokken jeu gluecksspiel gaming cocaine cocaina heroine cannabis wiet pills pillen medicijnen afkicken sevrage entzug relapse herval rechute quit stoppen arreter aufhoeren smoking roken fumer rauchen",
-        practical: "stolen gestolen vole gestohlen lost verloren perdu wallet portefeuille geldboerse card kaart carte karte bank money geld argent debt schulden dettes poison vergiftiging gif empoisonnement homeless dakloos sans-abri obdachlos passport paspoort documents papieren lawyer advocaat avocat anwalt victim slachtoffer victime opfer scam oplichting arnaque betrug fraud fraude"
+        practical: "stolen gestolen vole gestohlen lost verloren perdu wallet portefeuille geldboerse card kaart carte karte bank money geld argent debt schulden dettes poison vergiftiging gif empoisonnement homeless dakloos sans-abri obdachlos passport paspoort documents papieren lawyer advocaat avocat anwalt victim slachtoffer victime opfer scam oplichting arnaque betrug fraud fraude phishing gephisht hacked gehackt hack pirate sim imei identity identiteit diefstal theft vol"
     };
 
     function matches(entry, tokens) {
